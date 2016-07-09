@@ -1,0 +1,37 @@
+<header id="header" class="{% if page.title == 'Home' %}transparent-header dark{% endif %} full-header" data-sticky-class="not-dark">
+
+  <div id="header-wrap">
+
+    <div class="container clearfix">
+
+      <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+      <!-- Logo
+      ============================================= -->
+      <div id="logo">
+        <a href="/" class="standard-logo" data-dark-logo="/images/logo-dark.svg"><img src="/images/logo.svg" alt="Canvas Logo"></a>
+        <a href="/" class="retina-logo" data-dark-logo="/images/logo-dark.svg"><img src="/images/logo.svg" alt="Canvas Logo"></a>
+      </div><!-- #logo end -->
+
+      <!-- Primary Navigation
+      ============================================= -->
+      <nav id="primary-menu">
+
+        <ul>
+          {% assign pages_sorted = site.pages | sort: "menu_order" %}
+          {% for my_page in pages_sorted %}
+            {% if my_page.title %}
+              {% unless my_page.url contains 'page' %}
+                <li class="current"><a href="{{ my_page.url | prepend: site.baseurl }}"><div>{{ my_page.title }}</div></a></li>
+              {% endunless %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+      </nav><!-- #primary-menu end -->
+
+    </div>
+
+  </div>
+
+</header><!-- #header end -->

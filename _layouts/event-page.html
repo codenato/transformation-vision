@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+<section id="content">
+
+  <div class="content-wrap">
+
+    <div class="container clearfix">
+
+      <div class="single-event">
+
+        <div class="col_three_fourth">
+          <div class="entry-image nobottommargin">
+            <a href="#"><img src="{{ page.header_img_path }}" alt="Event Single"></a>
+            <div class="entry-overlay">
+              <span class="hidden-xs">Starts in: </span><div id="event-countdown" class="countdown"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col_one_fourth col_last">
+          <div class="panel panel-default events-meta">
+            <div class="panel-heading">
+              <h3 class="panel-title">Event Info:</h3>
+            </div>
+            <div class="panel-body">
+              <ul class="iconlist nobottommargin">
+                <li><i class="icon-calendar3"></i> {{ page.start_at_date | date_to_string }}</li>
+                <li><i class="icon-time"></i> {{ page.start_time }} - {{ page.end_time }}</li>
+                <li><i class="icon-map-marker2"></i> {{ page.location }}</li>
+                {% if page.price %}
+                  <li><i class="icon-dollar"></i> <strong>{{ page.price }}</strong></li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+          {% if page.price_link %}
+            <a href="{{ page.price_link }}" class="btn btn-success btn-block btn-lg">Buy Tickets</a>
+          {% endif %}
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="col_three_fourth">
+
+          <h3>Details</h3>
+
+          {{ content }}
+
+
+        </div>
+
+        <div class="col_one_fourth col_last">
+
+          <h4>Location</h4>
+
+          <section id="google-map" class="gmap" style="height: 300px;"></section>
+
+
+        </div>
+
+        <div class="clear"></div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,152 @@
+---
+layout: default
+title: About Us
+slogan: "Everything you need to know about us :)"
+menu_order: 2
+---
+
+<section id="content">
+
+  <div class="content-wrap">
+
+    <div class="container clearfix">
+
+      <div class="col_one_third">
+
+        <div class="heading-block fancy-title nobottomborder title-bottom-border">
+          <h4>Why choose <span>Us</span>.</h4>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quidem minus id omnis, nam expedita, ea fuga commodi voluptas iusto, hic autem deleniti dolores explicabo labore enim repellat earum perspiciatis.</p>
+
+      </div>
+
+      <div class="col_one_third">
+
+        <div class="heading-block fancy-title nobottomborder title-bottom-border">
+          <h4>Our <span>Mission</span>.</h4>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quidem minus id omnis, nam expedita, ea fuga commodi voluptas iusto, hic autem deleniti dolores explicabo labore enim repellat earum perspiciatis.</p>
+
+      </div>
+
+      <div class="col_one_third col_last">
+
+        <div class="heading-block fancy-title nobottomborder title-bottom-border">
+          <h4>What we <span>Do</span>.</h4>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quidem minus id omnis, nam expedita, ea fuga commodi voluptas iusto, hic autem deleniti dolores explicabo labore enim repellat earum perspiciatis.</p>
+
+      </div>
+
+    </div>
+
+    <div class="section nomargin">
+      <div class="container clearfix">
+
+        <div class="col_one_fourth nobottommargin center" data-animate="bounceIn">
+          &nbsp;
+        </div>
+        <div class="col_one_fourth nobottommargin center" data-animate="bounceIn">
+          <i class="i-plain i-xlarge divcenter icon-line-heart"></i>
+          <div class="counter counter-lined"><span data-from="100" data-to="846" data-refresh-interval="50" data-speed="2000"></span>K+</div>
+          <h5>Womans Blessed</h5>
+        </div>
+
+        <div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="200">
+          <i class="i-plain i-xlarge divcenter nobottommargin icon-smile"></i>
+          <div class="counter counter-lined"><span data-from="3000" data-to="15360" data-refresh-interval="100" data-speed="2500"></span>+</div>
+          <h5>Babies Saved</h5>
+        </div>
+        <div class="col_one_fourth nobottommargin center" data-animate="bounceIn">
+          &nbsp;
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row common-height clearfix">
+
+      <div class="col-sm-5 col-padding" style="background: url('/images/sheila hood.jpg') center center no-repeat; background-size: cover;"></div>
+
+      <div class="col-sm-7 col-padding">
+        <div>
+          <div class="heading-block">
+            <span class="before-heading color">Director</span>
+            <h3>Shelia Hood</h3>
+          </div>
+
+          <div class="row clearfix">
+
+            <div class="col-md-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+                <i class="icon-facebook"></i>
+                <i class="icon-facebook"></i>
+              </a>
+              <a href="#" class="social-icon inline-block si-small si-light si-rounded si-twitter">
+                <i class="icon-twitter"></i>
+                <i class="icon-twitter"></i>
+              </a>
+              <a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
+                <i class="icon-gplus"></i>
+                <i class="icon-gplus"></i>
+              </a>
+            </div>
+
+            <div class="col-md-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container clearfix">
+
+      <div class="clear"></div>
+
+      <div class="heading-block center">
+        <h4>Our Sponsors</h4>
+      </div>
+
+      {% include sponsors.html %}
+
+    </div>
+
+    <div class="section footer-stick">
+
+      <h4 class="uppercase center">Womens <span>Testimonails</span></h4>
+
+      <div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+        <div class="flexslider">
+          <div class="slider-wrap">
+
+            {% for t in site.data.testimonials %}
+              <div class="slide">
+                <div class="testi-image">
+                  <a href="#"><img src="{{ t.img_path }}" ></a>
+                </div>
+                <div class="testi-content">
+                  <p>{{ t.desc }}</p>
+                  <div class="testi-meta">
+                    {{ t.name }}
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

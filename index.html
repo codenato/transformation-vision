@@ -1,0 +1,185 @@
+---
+layout: default
+title: Home
+menu_order: 1
+button_name: Great Start
+button_link: "/"
+main_phrases:
+  - You can write anything you want here 1
+  - You can write anything you want here 2
+  - You can write anything you want here 3
+---
+
+<div class="content-wrap">
+
+  <div class="container clearfix">
+
+    <div class="col_one_third">
+      <div class="feature-box fbox-border fbox-effect">
+        <div class="fbox-icon">
+          <a href="#"><i class="icon-line-heart i-alt"></i></a>
+        </div>
+        <h3>Love</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+      </div>
+    </div>
+
+    <div class="col_one_third">
+      <div class="feature-box fbox-border fbox-effect">
+        <div class="fbox-icon">
+          <a href="#"><i class="icon-world i-alt"></i></a>
+        </div>
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+      </div>
+    </div>
+
+    <div class="col_one_third col_last">
+      <div class="feature-box fbox-border fbox-effect">
+        <div class="fbox-icon">
+          <a href="#"><i class="icon-line-thermometer i-alt"></i></a>
+        </div>
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="col_one_third nobottommargin">
+      <div class="feature-box fbox-border fbox-effect">
+        <div class="fbox-icon">
+          <a href="#"><i class="icon-line-sun i-alt"></i></a>
+        </div>
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+      </div>
+    </div>
+
+    <div class="col_one_third nobottommargin">
+      <div class="feature-box fbox-border fbox-effect">
+        <div class="fbox-icon">
+          <a href="#"><i class="icon-tint i-alt"></i></a>
+        </div>
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+      </div>
+    </div>
+
+    <div class="col_one_third nobottommargin col_last">
+      <div class="feature-box fbox-border fbox-effect">
+        <div class="fbox-icon">
+          <a href="#"><i class="icon-home i-alt"></i></a>
+        </div>
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+  </div>
+
+  <div class="promo topmargin-lg promo-border promo-full">
+    <div class="container clearfix">
+      <h3>Call us today at <span>+1.00.00000000</span> or Email us at <span>contact@hopemassion.com</span></h3>
+      <span>Welcome to the home where "Life Grows Inside"!</span>
+      <a href="/contact" class="button button-xlarge button-rounded">Or message us</a>
+    </div>
+  </div>
+
+  <div class="container clearfix">
+
+    <div class="fancy-title title-center title-dotted-border topmargin">
+      <h3>News</h3>
+    </div>
+
+    <div id="oc-posts" class="owl-carousel posts-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="false" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="4">
+
+      {% for post in site.posts limit: 6 %}
+        <div class="oc-item">
+          <div class="ipost clearfix">
+            <div class="entry-image">
+              <a href="{{ post.header_img_path}}" data-lightbox="image"><img class="image_fade" src="{{ post.header_imgthumb_path }}" ></a>
+            </div>
+            <div class="entry-title">
+              <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            </div>
+            <ul class="entry-meta clearfix">
+              <li><i class="icon-calendar3"></i> {{ post.date }}</li>
+              <!-- <li><a href="blog&#45;single.html#comments"><i class="icon&#45;comments"></i> 13</a></li> -->
+              <li><a href="#"><i class="icon-camera-retro"></i></a></li>
+            </ul>
+            <div class="entry-content">
+              <p>{{ post.excerpt }}</p>
+              <a href="{{ post.url }}"class="more-link">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      {% endfor %}
+
+    </div>
+
+    <div class="fancy-title title-center title-dotted-border topmargin">
+      <h3>Events</h3>
+    </div>
+
+    <div id="oc-events" class="owl-carousel events-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="false" data-items-sm="1" data-items-md="2" data-items-lg="2">
+
+      {% capture now_unix %} {{ 'now' | date: '%s' }} {% endcapture %}
+
+      {% for event in site.events reversed %}
+
+        {% capture event_date_unix %} {{ event.start_at_date | date: '%s' }} {% endcapture %}
+
+        {% if event_date_unix >= now_unix  %}
+          <div class="oc-item">
+            <div class="ievent clearfix">
+              <div class="entry-image">
+                <a href="{{ event.url }}">
+                  <img src="{{ event.header_imgthumb_path }}">
+                  <div class="entry-date">{{ event.start_at_date | date: "%d" }}<span>{{ event.start_at_date | date: "%b" }}</span></div>
+                </a>
+              </div>
+              <div class="entry-c">
+                <div class="entry-title">
+                  <h2><a href="{{ event.url }}">{{ event.title }}</a></h2>
+                </div>
+                <ul class="entry-meta clearfix">
+                  <li><a href="#"><i class="icon-time"></i> {{ event.start_time }} - {{ event.end_time }}</a></li>
+                  <li><a href="#"><i class="icon-map-marker2"></i> {{ event.location }}</a></li>
+                </ul>
+                <div class="entry-content">
+                  <p>{{ event.excerpt | truncate: 100 }}</p>
+                  {% if event.price_link %}
+                    <a href="{{ page.price_link }}" class="btn btn-default">Buy Tickets</a>
+                  {% endif %}
+                  <a href="{{ event.url }}" class="btn btn-danger">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        {% endif %}
+
+      {% endfor %}
+
+    </div>
+
+    <div class="clear"></div>
+    <div class="line"></div>
+
+    <h4 class="center">Meet our Sponsors</h4>
+
+    {% include sponsors.html %}
+
+  </div>
+
+  <a class="button button-full center tright footer-stick">
+    <div class="container clearfix">
+      Providing residency for <strong>women</strong> and their <strong>newborn.</strong>
+    </div>
+  </a>
+
+</div>

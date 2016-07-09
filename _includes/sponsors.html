@@ -1,0 +1,9 @@
+<ul class="clients-grid grid-6 bottommargin clearfix">
+    {% for s in site.data.sponsors %}
+      <li>
+        <a href="{% if s.web_site != "" and s.web_site != nil %} {{ s.web_site }} {% else %} javascript:void(0) {% endif %}">
+          <img src="{{s.img_path}}">
+        </a>
+      </li>
+    {% endfor %}
+</ul>

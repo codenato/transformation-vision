@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="stretched">
+
+    <div id="wrapper" class="clearfix">
+
+      {% include header.html %}
+
+      {% if page.title == 'Home' %}
+
+        <section id="slider" class="slider-parallax" style="background: url('/images/header.jpg') no-repeat; background-size: cover" data-height-lg="600" data-height-md="500" data-height-sm="400" data-height-xs="300" data-height-xxs="250">
+          <div class="slider-parallax-inner">
+
+            <div class="container clearfix">
+              <div class="vertical-middle dark center">
+
+                <div class="heading-block nobottommargin center">
+                  <h1>
+                    <span class="text-rotater nocolor" data-separator="|" data-rotate="flipInX" data-speed="3500">
+                      <span class="t-rotate">{{page.main_phrases | join: '|'}}</span>
+                    </span>
+                  </h1>
+                  <span class="hidden-xs">Where Life grows Inside!!!</span>
+                </div>
+
+                <a href="{{ page.button_link }}" class="button button-border button-light button-rounded button-reveal tright button-large topmargin hidden-xs"><i class="icon-angle-right"></i><span>{{ page.button_name }}</span></a>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+      {% else %}
+        <section id="page-title">
+
+          <div class="container clearfix">
+            <h1>{{ page.title }}</h1>
+            {% if page.slogan %}
+              <span>{{ page.slogan }}</span>
+            {% endif %}
+
+            {% include breadcrumbs.html %}
+          </div>
+
+        </section>
+
+      {% endif %}
+
+      <!-- Content
+      ============================================= -->
+      <section id="content">
+        {{ content }}
+      </section><!-- #content end -->
+
+    </div>
+
+    {% include footer.html %}
+
+
+     <!-- External JavaScripts
+    ============================================= -->
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script type="text/javascript" src="/js/functions.js"></script>
+
+    <script>
+      $(function() {
+        $( "#side-navigation" ).tabs({ show: { effect: "fade", duration: 400 } });
+      });
+    </script>
+
+    {% if page.location %}
+      <script type="text/javascript" src="https://maps.google.com/maps/api/js"></script>
+      <script type="text/javascript" src="/js/jquery.gmap.js"></script>
+
+      <script type="text/javascript">
+
+        jQuery('#google-map').gMap({
+          address: "{{ page.location }}",
+          maptype: 'ROADMAP',
+          zoom: 14,
+          markers: [
+            {
+              address: "{{ page.location }}",
+              icon: {
+                image: "/images/icons/map-icon-red.png",
+                iconsize: [32, 39],
+                iconanchor: [32,39]
+              }
+            }
+          ],
+          doubleclickzoom: false,
+          controls: {
+            panControl: true,
+            zoomControl: true,
+            mapTypeControl: true,
+            scaleControl: false,
+            streetViewControl: false,
+            overviewMapControl: false
+          }
+        });
+
+      </script>
+
+    {% endif %}
+
+    {% if page.start_at_date %}
+      <script type="text/javascript">
+        function am_pm_to_hours(time) {
+            var hours = Number(time.match(/^(\d+)/)[1]);
+            var minutes = Number(time.match(/:(\d+)/)[1]);
+            var AMPM = time.match(/\s(.*)$/)[1];
+            if (AMPM == "pm" && hours < 12) hours = hours + 12;
+            if (AMPM == "am" && hours == 12) hours = hours - 12;
+            var sHours = hours.toString();
+            var sMinutes = minutes.toString();
+            if (hours < 10) sHours = "0" + sHours;
+            if (minutes < 10) sMinutes = "0" + sMinutes;
+            return (sHours +':'+sMinutes);
+        }
+
+        jQuery(document).ready( function($) {
+          var time = am_pm_to_hours('{{ page.start_time }}').split(':');
+          var eventStartDate = new Date({{ page.start_at_date | date: "%Y" }}, {{ page.start_at_date | date: "%m" }}, {{ page.start_at_date | date: "%d" }}, time[0], time[1]);
+          $('#event-countdown').countdown({until: eventStartDate});
+        });
+      </script>
+    {% endif %}
+
+  </body>
+
+</html>

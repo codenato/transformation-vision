@@ -1,0 +1,41 @@
+{% assign path =  page.url | remove_first: '/' | split: '/' %}
+{% assign helper =  '' %}
+{% assign all_paths =  '' %}
+
+{% for p in path %}
+  {% assign idx =  forloop.index0 %}
+  {% for i in (0..idx) %}
+    {% assign helper = helper | append: '/' | append: path[i] | append: '/' %}
+  {% endfor %}
+  {% assign all_paths = all_paths | append: helper | append: ',' %}
+  {% assign helper =  '' %}
+{% endfor %}
+
+{% assign all =  all_paths | split: ',' %}
+{% assign n_found = 0 %}
+
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+
+  {% for a in all %}
+
+    {% for pg in site.pages %}
+      {% if pg.url == a %}
+        {% assign n_found = n_found | plus: 1 %}
+
+        {% if pg.url == page.url %}
+          <li class="active">{{ pg.title }}</li>
+        {% else %}
+          <li><a href="{{ pg.url }}">{{ pg.title }}</a></li>
+        {% endif %}
+
+      {% endif %}
+    {% endfor %}
+
+    {% if forloop.last == true and n_found < all.size %}
+      <li class="active">{{ page.title }}</li>
+    {% endif %}
+
+  {% endfor %}
+  <!-- <li class="active">Event Single</li> -->
+</ol>

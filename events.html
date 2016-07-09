@@ -1,0 +1,56 @@
+---
+layout: default
+title: Events
+menu_order: 4
+---
+
+<section id="content">
+
+  <div class="content-wrap">
+
+    <div class="container clearfix">
+
+      <div id="posts" class="events small-thumbs">
+        {% capture now_unix %} {{ 'now' | date: '%s' }} {% endcapture %}
+
+        {% for event in site.events reversed %}
+
+          {% capture event_date_unix %} {{ event.start_at_date | date: '%s' }} {% endcapture %}
+
+          {% if event_date_unix >= now_unix  %}
+            <div class="entry clearfix">
+              <div class="entry-image">
+                <a href="{{ event.url }}">
+                  <img src="{{ event.header_imgthumb_path }}">
+                  <div class="entry-date">{{ event.start_at_date | date: "%d" }}<span>{{ event.start_at_date | date: "%b" }}</span></div>
+                </a>
+              </div>
+              <div class="entry-c">
+                <div class="entry-title">
+                  <h2><a href="{{ event.url }}">{{ event.title }}</a></h2>
+                </div>
+                <ul class="entry-meta clearfix">
+                  <li><a href="#"><i class="icon-time"></i> {{ event.start_time }} - {{ event.end_time }}</a></li>
+                  <li><a href="#"><i class="icon-map-marker2"></i> {{ event.location }}</a></li>
+                </ul>
+                <div class="entry-content">
+                  <p>{{ event.excerpt | truncate: 100 }}</p>
+                  {% if event.price_link %}
+                    <a href="{{ page.price_link }}" class="btn btn-default">Buy Tickets</a>
+                  {% endif %}
+                  <a href="{{ event.url }}" class="btn btn-danger">Read More</a>
+                </div>
+              </div>
+            </div>
+
+          {% endif %}
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

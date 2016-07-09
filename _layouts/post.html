@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<section id="content">
+
+  <div class="content-wrap">
+
+    <div class="container clearfix">
+
+      <div class="single-post nobottommargin">
+
+        <!-- Single Post
+        ============================================= -->
+        <div class="entry clearfix">
+
+          <!-- Entry Title
+          ============================================= -->
+          <div class="entry-title">
+            <h2>{{ page.title }}</h2>
+          </div><!-- .entry-title end -->
+
+          <!-- Entry Meta
+          ============================================= -->
+          <ul class="entry-meta clearfix">
+            <li><i class="icon-calendar3"></i> {{ page.date | date_to_long_string }}</li>
+            <li><a href="#"><i class="icon-user"></i> {{ page.author }}</a></li>
+            <li><a href="#"><i class="icon-camera-retro"></i></a></li>
+          </ul><!-- .entry-meta end -->
+
+          <!-- Entry Image
+          ============================================= -->
+          <div class="entry-image bottommargin">
+            <a href="#"><img src="{{ page.header_img_path}}" ></a>
+          </div><!-- .entry-image end -->
+
+          <!-- Entry Content
+          ============================================= -->
+          <div class="entry-content notopmargin">
+            {{content}}
+          </div>
+        </div><!-- .entry end -->
+
+        <!-- Post Navigation
+        ============================================= -->
+        <div class="post-navigation clearfix">
+
+          {% if page.previous %}
+            <div class="col_half nobottommargin">
+              <a href="{{ page.previous.url }}">&larr; {{ page.previous.title }}</a>
+            </div>
+          {% endif %}
+
+          {% if page.next %}
+            <div class="col_half col_last tright nobottommargin">
+              <a href="{{ page.nexst.url }}">{{ page.next.title }} &rarr; </a>
+            </div>
+          {% endif %}
+
+        </div><!-- .post-navigation end -->
+
+        <div class="line"></div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

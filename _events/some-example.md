@@ -1,6 +1,6 @@
 ---
 title:  "Example Event"
-start_at_date: 2016-07-27
+start_at_date: 2016-07-07
 start_time: 8:00 pm
 end_time: 9:00 pm
 location: San Francisco, USA

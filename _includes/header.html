@@ -21,7 +21,7 @@
           {% assign pages_sorted = site.pages | sort: "menu_order" %}
           {% for my_page in pages_sorted %}
             {% if my_page.title %}
-              {% unless my_page.url contains 'page' %}
+              {% unless my_page.menu_order == '' or my_page.menu_order == nil %}
                 <li class="current"><a href="{{ my_page.url | prepend: site.baseurl }}"><div>{{ my_page.title }}</div></a></li>
               {% endunless %}
             {% endif %}

@@ -25,7 +25,7 @@ menu_order: 3
               <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             </div>
             <ul class="entry-meta clearfix">
-              <li><i class="icon-calendar3"></i> {{ post.date }}</li>
+              <li><i class="icon-calendar3"></i> {{ post.date | date_to_string }} {{ post.date | date: '%r' }}</li>
               <!-- <li><a href="blog&#45;single.html#comments"><i class="icon&#45;comments"></i> 13</a></li> -->
               <li><a href="#"><i class="icon-camera-retro"></i></a></li>
             </ul>

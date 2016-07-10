@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-06-23 10:42:19 +0200
 header_imgthumb_path: /images/blog/grid/17.jpg

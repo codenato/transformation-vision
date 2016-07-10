@@ -29,7 +29,7 @@ defaults:
     values:
       layout: "event-page"
 
-gems: [jekyll-paginate, jekyll-sitemap]
+gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "/news/page:num/"
 

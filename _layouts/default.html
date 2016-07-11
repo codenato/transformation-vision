@@ -138,8 +138,6 @@
         var form = $('#main-contact-form');
         
 	    form.submit(function(event) {
-	        event.preventDefault();
-	        
 	        $('.contact-form.result').text("{{ page.response_message }}");
 	    });
       </script>

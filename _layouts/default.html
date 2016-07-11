@@ -140,6 +140,7 @@
 	    form.submit(function(event) {
 	        $('.form-process').hide();
 	        $('.contact-form-result').text("{{ page.response_message }}");
+	        form.reset();
 	    });
       </script>
     {% endif %}

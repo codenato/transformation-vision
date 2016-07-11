@@ -135,7 +135,6 @@
 
     {% if page._is_contact == true %}
       <script type="text/javascript">
-          $(function() {
               var form = $('#template-contactform');
             
         	    form.submit(function(event) {
@@ -145,7 +144,6 @@
         	        console.log("{{ page.response_message }}");
         	    });
               
-          });
       </script>
     {% endif %}
 

@@ -138,11 +138,9 @@
         var form = $('#template-contactform');
         
 	    form.submit(function(event) {
-	        console.log('were here!!!');
 	        $('.form-process').hide();
 	        $('.contact-form-result').text("{{ page.response_message }}");
-	        console.log("{{ page.response_message }}");
-	        form.reset();
+	        event.preventDefault();
 	    });
       </script>
     {% endif %}

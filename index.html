@@ -3,11 +3,12 @@ layout: default
 title: Home
 menu_order: 1
 button_name: Great Start
-button_link: "/"
+button_link: /
 main_phrases:
-  - You can write anything you want here 1
-  - You can write anything you want here 2
-  - You can write anything you want here 3
+  - AAAAAAAA AAAAAAAAA
+  - BBBB BBBB
+  - LOVE LOVE LOVE
+  - Thiago testing with Dudu
 ---
 
 <div class="content-wrap">
@@ -100,7 +101,7 @@ main_phrases:
         <div class="oc-item">
           <div class="ipost clearfix">
             <div class="entry-image">
-              <a href="{{ post.header_img_path}}" data-lightbox="image"><img class="image_fade" src="{{ post.header_imgthumb_path }}" ></a>
+              <a href="{{ post.header_img_path}}" data-lightbox="image"><img class="image_fade" src="{{ post.header_imgthumb_path }}" /></a>
             </div>
             <div class="entry-title">
               <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -112,7 +113,7 @@ main_phrases:
             </ul>
             <div class="entry-content">
               <p>{{ post.excerpt }}</p>
-              <a href="{{ post.url }}"class="more-link">Read More</a>
+              <a href="{{ post.url }}" class="more-link">Read More</a>
             </div>
           </div>
         </div>
@@ -138,7 +139,7 @@ main_phrases:
             <div class="ievent clearfix">
               <div class="entry-image">
                 <a href="{{ event.url }}">
-                  <img src="{{ event.header_imgthumb_path }}">
+                  <img src="{{ event.header_imgthumb_path }}" />
                   <div class="entry-date">{{ event.start_at_date | date: "%d" }}<span>{{ event.start_at_date | date: "%b" }}</span></div>
                 </a>
               </div>
@@ -189,7 +190,7 @@ main_phrases:
         <div class="iportfolio">
           <div class="portfolio-image">
             <a href="portfolio-single.html">
-              <img src="{{ r.img_thumb_path }}">
+              <img src="{{ r.img_thumb_path }}" />
             </a>
             <div class="portfolio-overlay">
               <a href="{{ r.img_path }}" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>

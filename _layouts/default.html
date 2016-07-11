@@ -147,24 +147,24 @@
         // }
 
         // Fetch the form element
-        var formEl = document.getElementById("template-contactform");
+        // var formEl = document.getElementById("template-contactform");
 
-        // Override the submit event
-        formEl.addEventListener("submit", function (e) {
-          e.preventDefault();
+        // // Override the submit event
+        // formEl.addEventListener("submit", function (e) {
+        //   e.preventDefault();
 
-          var request = new XMLHttpRequest();
+        //   var request = new XMLHttpRequest();
 
-          request.addEventListener("load", function () {
-            if (request.status === 302) { // CloudCannon redirects on success
-              $('.contact-form.result').text("{{ page.response_message }}");
-            }
-          });
+        //   request.addEventListener("load", function () {
+        //     if (request.status === 302) { // CloudCannon redirects on success
+        //       $('.contact-form.result').text("{{ page.response_message }}");
+        //     }
+        //   });
 
-          request.open(formEl.method, formEl.action);
-          request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-          request.send(new FormData(formEl));
-        });
+        //   request.open(formEl.method, formEl.action);
+        //   request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        //   request.send(new FormData(formEl));
+        // });
       </script>
     {% endif %}
 

@@ -135,15 +135,17 @@
 
     {% if page._is_contact == true %}
       <script type="text/javascript">
-        var form = $('#template-contactform');
-        
-	    form.submit(function(event) {
-	        console.log('aa');
-	        $('.form-process').hide();
-	        $('.contact-form-result').text("{{ page.response_message }}");
-	        
-	        event.preventDefault();
-	    });
+          $(function() {
+              var form = $('#template-contactform');
+            
+        	    form.submit(function(event) {
+        	        console.log('were here!!!');
+        	        $('.form-process').hide();
+        	        $('.contact-form-result').text("{{ page.response_message }}");
+        	        console.log("{{ page.response_message }}");
+        	    });
+              
+          });
       </script>
     {% endif %}
 

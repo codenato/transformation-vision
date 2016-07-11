@@ -1,4 +1,8 @@
-- name: "Someone"
-  other_info: "Any description"
+- name: Someone
+  other_info: Any description
   img_path: /images/residents/IMG_9400.jpg
   img_thumb_path: /images/residents/IMG_9400-thumb.jpg
+- name: Someone 2
+  other_info: Some Info
+  img_path: /images/residents/img_9577.jpg
+  img_thumb_path: /images/residents/img_9577-thumb.jpg

@@ -1,0 +1,4 @@
+- name: "Someone"
+  other_info: "Any description"
+  img_path: /images/residents/IMG_9400.jpg
+  img_thumb_path: /images/residents/IMG_9400-thumb.jpg

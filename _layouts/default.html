@@ -135,16 +135,16 @@
 
     {% if page._is_contact == true %}
       <script type="text/javascript">
-        function getFormDataString(formEl) {
-          var formData = new FormData(formEl),
-              data = [];
+        // function getFormDataString(formEl) {
+        //   var formData = new FormData(formEl),
+        //       data = [];
 
-          for (var keyValue of formData) {
-            data.push(encodeURIComponent(keyValue[0]) + "=" + encodeURIComponent(keyValue[1]));
-          }
+        //   for (var keyValue of formData) {
+        //     data.push(encodeURIComponent(keyValue[0]) + "=" + encodeURIComponent(keyValue[1]));
+        //   }
 
-          return data.join("&");
-        }
+        //   return data.join("&");
+        // }
 
         // Fetch the form element
         var formEl = document.getElementById("template-contactform");
@@ -163,7 +163,7 @@
 
           request.open(formEl.method, formEl.action);
           request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-          request.send(getFormDataString(formEl));
+          request.send(new FormData(formEl));
         });
       </script>
     {% endif %}

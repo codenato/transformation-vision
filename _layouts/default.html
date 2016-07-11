@@ -138,8 +138,10 @@
         var form = $('#main-contact-form');
         
 	    form.submit(function(event) {
+	        console.log('were here!!!');
 	        $('.form-process').hide();
 	        $('.contact-form-result').text("{{ page.response_message }}");
+	        console.log('{{ page.response_message }}');
 	        form.reset();
 	    });
       </script>

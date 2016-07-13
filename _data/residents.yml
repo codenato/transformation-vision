@@ -28,9 +28,5 @@
   img_thumb_path: /images/residents/7_thumb.jpg
 - name: Resident
   other_info: Hope Mansion
-  img_path: /images/residents/8.jpg
-  img_thumb_path: /images/residents/8_thumb.jpg
-- name: Resident
-  other_info: Hope Mansion
   img_path: /images/residents/9.jpg
   img_thumb_path: /images/residents/9_thumb.jpg

@@ -11,3 +11,10 @@ header_img_path: /images/events/thumbs/gala_event.jpg
 ---
 
 
+WHAT: A Night of Hope - Oil Baron's Ball , benefiting Hope Mansion
+
+WHEN: September 30th, 7:00PM
+
+WHERE: Eddie Deen's Ranch
+
+ATTIRE: Denim & Diamonds

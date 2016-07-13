@@ -11,27 +11,37 @@
 
       {% if page.title == 'Home' %}
 
-        <section id="slider" class="slider-parallax" style="background: url('/images/header.jpg') no-repeat; background-size: cover" data-height-lg="600" data-height-md="500" data-height-sm="400" data-height-xs="300" data-height-xxs="250">
+        <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix" data-loop="true">
+
           <div class="slider-parallax-inner">
 
-            <div class="container clearfix">
-              <div class="vertical-middle dark center">
+            <div class="swiper-container swiper-parent">
+              <div class="swiper-wrapper">
 
-                <div class="heading-block nobottommargin center">
-                  <h1>
-                    <span class="text-rotater nocolor" data-separator="|" data-rotate="flipInX" data-speed="3500">
-                      <span class="t-rotate">{{page.main_phrases | join: '|'}}</span>
-                    </span>
-                  </h1>
-                  <span class="hidden-xs editable">"...Life grows inside"</span>
-                </div>
+                {% for s in page.slides %}
+                  <div class="swiper-slide {% if s.text_white == true %}dark{% endif %}" style="background-image: url('{{ s.img_path }}'); background-position: center top;">
+                    <div class="container clearfix">
+                      <div class="slider-caption {% if s.text_center == true %}slider-caption-center{% endif %}">
+                        <h2 data-caption-animate="fadeInUp">{{ s.title }}</h2>
+                        <p data-caption-animate="fadeInUp" data-caption-delay="200">{{ s.sub_title }}</p>
 
-                <a href="{{ page.button_link }}" class="button button-border button-light button-rounded button-reveal tright button-large topmargin hidden-xs"><i class="icon-angle-right"></i><span>{{ page.button_name }}</span></a>
+                        {% if s.button_link != nil %}
+                          <a href="{{ s.button_link }}" data-caption-animate="fadeInUp" data-caption-delay="300" class="button button-border button-light button-rounded button-reveal tright button-large topmargin hidden-xs"><i class="icon-angle-right"></i><span>{{ s.button_name }}</span></a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
 
               </div>
+              <div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
+              <div id="slider-arrow-right"><i class="icon-angle-right"></i></div>
+              <div id="slide-number"><div id="slide-number-current"></div><span>/</span><div id="slide-number-total"></div></div>
             </div>
+
           </div>
-        </section>
+
+      </section>
 
       {% else %}
         <section id="page-title">
@@ -136,14 +146,14 @@
     {% if page._is_contact == true %}
       <script type="text/javascript">
               var form = $('#template-contactform');
-            
+
         	    form.submit(function(event) {
         	        console.log('were here!!!');
         	        $('.form-process').hide();
         	        $('.contact-form-result').text("{{ page.response_message }}");
         	        console.log("{{ page.response_message }}");
         	    });
-              
+
       </script>
     {% endif %}
 

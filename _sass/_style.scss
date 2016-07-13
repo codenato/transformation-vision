@@ -1097,7 +1097,6 @@ body.stretched #header.full-header .container {
 	float: left;
 	padding-right: 15px;
 	margin-right: 15px;
-	border-right: 1px solid #EEE;
 }
 
 #primary-menu-trigger,
@@ -2827,7 +2826,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 	width:100%;
 	height:100%;
 	margin: 0;
-	background: url('images/pattern2.png') repeat;
+	background: url('/images/pattern2.png') repeat;
 }
 
 .swiper_wrapper .swiper-slide {
@@ -3342,7 +3341,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 -----------------------------------------------------------------*/
 
 #page-title.page-title-pattern {
-	background-image: url('images/pattern.png');
+	background-image: url('/images/pattern.png');
 	background-repeat: repeat;
 	background-attachment: fixed;
 }

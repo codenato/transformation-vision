@@ -4,8 +4,24 @@ title: Home
 menu_order: 1
 button_name: A Night of Hope Gala 2016
 button_link: /events/thiago-and-dudu-event.html
-main_phrases:
-  - WELCOME TO THE HOME WHERE...
+slides:
+  - title: Testing the Title
+    sub_title: This house brings love to womens and their newborns.
+    img_path: /images/slider/IMG_0802-edited.jpg
+    text_white: true
+    text_center: true
+  - title: Black Text Example
+    sub_title: For brither backgrounds
+    img_path: /images/slider/3.jpg
+    text_white: false
+    text_center: true
+  - title: Welcome to the Mansion
+    sub_title: This house brings love to womens and their newborns.
+    img_path: /images/slider/header.jpg
+    text_white: true
+    text_center: false
+    button_link: /about
+    button_name: MORE
 ---
 
 <div class="content-wrap">
@@ -60,7 +76,7 @@ main_phrases:
           <a href="#"><i class="icon-tint i-alt"></i></a>
         </div>
         <h3 class="editable">eligibility requirements</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+        <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
       </div>
     </div>
 
@@ -80,44 +96,13 @@ main_phrases:
 
   <div class="promo topmargin-lg promo-border promo-full">
     <div class="container clearfix">
-      <h3>Call us today at <span>{{ site.data.general.phone }}</span> or Email us at <span>{{ site.data.general.email }}</span></h3>
-      <span class="editable">Welcome to the home where "Life Grows Inside"!</span>
-      <a href="/contact" class="button button-xlarge button-rounded">Or message us</a>
+      <h3 class="editable">Let's make this part the donation call?</span></h3>
+      <span class="editable">Be part of this ministry</span>
+      <a href="/contact" class="button button-xlarge button-rounded">Donate</a>
     </div>
   </div>
 
   <div class="container clearfix">
-
-    <div class="fancy-title title-center title-dotted-border topmargin">
-      <h3>News</h3>
-    </div>
-
-    <div id="oc-posts" class="owl-carousel posts-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="false" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="4">
-
-      {% for post in site.posts limit: 6 %}
-        <div class="oc-item">
-          <div class="ipost clearfix">
-            <div class="entry-image">
-              <a href="{{ post.header_img_path}}" data-lightbox="image"><img class="image_fade" src="{{ post.header_imgthumb_path }}" /></a>
-            </div>
-            <div class="entry-title">
-              <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            </div>
-            <ul class="entry-meta clearfix">
-              <li><i class="icon-calendar3"></i> {{ post.date | date_to_string }} {{ post.date | date: '%r' }}</li>
-              <!-- <li><a href="blog&#45;single.html#comments"><i class="icon&#45;comments"></i> 13</a></li> -->
-              <li><a href="#"><i class="icon-camera-retro"></i></a></li>
-            </ul>
-            <div class="entry-content">
-              <p>{{ post.excerpt }}</p>
-              <a href="{{ post.url }}" class="more-link">Read More</a>
-            </div>
-          </div>
-        </div>
-
-      {% endfor %}
-
-    </div>
 
     <div class="fancy-title title-center title-dotted-border topmargin">
       <h3>Events</h3>
@@ -160,6 +145,37 @@ main_phrases:
           </div>
 
         {% endif %}
+
+      {% endfor %}
+
+    </div>
+
+    <div class="fancy-title title-center title-dotted-border topmargin">
+      <h3>News</h3>
+    </div>
+
+    <div id="oc-posts" class="owl-carousel posts-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="false" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="4">
+
+      {% for post in site.posts limit: 6 %}
+        <div class="oc-item">
+          <div class="ipost clearfix">
+            <div class="entry-image">
+              <a href="{{ post.header_img_path}}" data-lightbox="image"><img class="image_fade" src="{{ post.header_imgthumb_path }}" /></a>
+            </div>
+            <div class="entry-title">
+              <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            </div>
+            <ul class="entry-meta clearfix">
+              <li><i class="icon-calendar3"></i> {{ post.date | date_to_string }} {{ post.date | date: '%r' }}</li>
+              <!-- <li><a href="blog&#45;single.html#comments"><i class="icon&#45;comments"></i> 13</a></li> -->
+              <li><a href="#"><i class="icon-camera-retro"></i></a></li>
+            </ul>
+            <div class="entry-content">
+              <p>{{ post.excerpt }}</p>
+              <a href="{{ post.url }}" class="more-link">Read More</a>
+            </div>
+          </div>
+        </div>
 
       {% endfor %}
 

@@ -12,6 +12,8 @@ url: "http://victorious-lime1.cloudvent.net" # the base hostname & protocol for 
 markdown: kramdown
 permalink: pretty
 
+# Selects
+
 # Collections
 collections:
   events:

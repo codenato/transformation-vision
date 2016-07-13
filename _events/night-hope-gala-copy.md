@@ -6,8 +6,8 @@ end_time:
 location: North Texas
 price:
 price_link: 'https://northtexasgivingday.org'
-header_imgthumb_path: /images/events/thumbs/gala_event.jpg
-header_img_path: /images/events/thumbs/gala_event.jpg
+header_imgthumb_path: /images/north_texas_2016.jpg
+header_img_path: /images/north_texas_2016.jpg
 ---
 
 

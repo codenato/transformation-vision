@@ -1,8 +1,36 @@
-- name: Someone
-  other_info: Any description
-  img_path: /images/residents/IMG_9400.jpg
-  img_thumb_path: /images/residents/IMG_9400-thumb.jpg
-- name: Someone 2
-  other_info: Some Info
-  img_path: /images/residents/img_9577.jpg
-  img_thumb_path: /images/residents/img_9577-thumb.jpg
+- name: Resident
+  other_info: Hope Mansion
+  img_path: /images/residents/1.jpg
+  img_thumb_path: /images/residents/1_thumb.jpg
+- name: Resident
+  other_info: Hope Mansion
+  img_path: /images/residents/2.jpg
+  img_thumb_path: /images/residents/2_thumb.jpg
+- name: Resident
+  other_info: Hope Mansion
+  img_path: /images/residents/3.jpg
+  img_thumb_path: /images/residents/3_thumb.jpg
+- name: Resident
+  other_info: Hope Mansion
+  img_path: /images/residents/4.jpg
+  img_thumb_path: /images/residents/4_thumb.jpg
+- name: Resident
+  other_info: Hope Mansion
+  img_path: /images/residents/5.jpg
+  img_thumb_path: /images/residents/5_thumb.jpg
+- name: Resident
+  other_info: Hope Mansion
+  img_path: /images/residents/6.jpg
+  img_thumb_path: /images/residents/6_thumb.jpg
+- name: Resident
+  other_info: Hope Mansion
+  img_path: /images/residents/7.jpg
+  img_thumb_path: /images/residents/7_thumb.jpg
+- name: Resident
+  other_info: Hope Mansion
+  img_path: /images/residents/8.jpg
+  img_thumb_path: /images/residents/8_thumb.jpg
+- name: Resident
+  other_info: Hope Mansion
+  img_path: /images/residents/9.jpg
+  img_thumb_path: /images/residents/9_thumb.jpg

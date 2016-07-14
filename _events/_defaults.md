@@ -8,4 +8,8 @@ price:
 price_link:
 header_imgthumb_path:
 header_img_path:
+
+_comments:
+  header_imgthumb_path: "400x300"
+  header_img_path: "Any size"
 ---

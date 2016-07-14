@@ -4,6 +4,28 @@ title: About Us
 slogan: 'Everything you need to know about us :)'
 menu_order: 2
 director_img_path: /images/sheila hood.jpg
+directors:
+  - role: Director
+    name: Shelia Hood
+    director_img_path: /images/directors/sheila hood.jpg
+    first_description: "Shelia directs the business operations of Trinity Church, overseeing Financial operations, Facility construction, operation, and maintenance, Human Resource activities, Communications, Information Technology and Asset Protection.<br />&nbsp;<br />Shelia brings 24 years experience in the corporate arena to Trinity where she was responsible for managing multi-million dollar capital expenses, and budgeting as well as directing procedures and operations for Human Resources and Facilities. In 1995 she felt the call of God to transition to Trinity Church to serve as the Administrator."
+    second_description: "Shelia believes all of her previous business training and experience was merely preparation for being a part of God&rsquo;s plan at Trinity Church.<br />&nbsp;<br />Shelia and Jim Hood have been married for many years, have four children and live in Duncanville with an ever changing menagerie of animals."
+    twitter: "someone"
+    facebook: "someone"
+    google: "someone"
+  - role: Director
+    name: Brenda Marsh
+    director_img_path: /images/directors/Brenda Marsh-edited.jpg
+    first_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    second_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    twitter: "someone"
+    facebook: "someone"
+    google: "someone"
+  - role: Director
+    name: Emily Dock
+    director_img_path: /images/directors/Emily Dock-edited.jpg
+    first_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    second_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 ---
 
 <section id="content">
@@ -42,71 +64,69 @@ director_img_path: /images/sheila hood.jpg
 
       </div>
 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/JLKP-CmtIMw" frameborder="0" allowfullscreen></iframe>
+
+      <div class="clear"></div>
+      <div class="line"></div>
     </div>
 
-    <div class="section nomargin">
-      <div class="container clearfix">
+    {% for d in page.directors %}
+      <div class="row clearfix">
 
-        <div class="col_one_fourth nobottommargin center" data-animate="bounceIn">
-          &nbsp;
-        </div>
-        <div class="col_one_fourth nobottommargin center" data-animate="bounceIn">
-          <i class="i-plain i-xlarge divcenter icon-line-heart"></i>
-          <div class="counter counter-lined"><span data-from="100" data-to="{{ site.data.general.womens_blessed }}" data-refresh-interval="50" data-speed="2000"></span>+</div>
-          <h5>Womens Blessed</h5>
-        </div>
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+        {% if thecycle == 'odd' %}
+          <div class="col-sm-5 col-padding director" style="background: url('{{ d.director_img_path }}') center center no-repeat; background-size: cover;"></div>
+        {% endif %}
 
-        <div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="200">
-          <i class="i-plain i-xlarge divcenter nobottommargin icon-smile"></i>
-          <div class="counter counter-lined"><span data-from="3000" data-to="{{ site.data.general.babies_blessed }}" data-refresh-interval="100" data-speed="2500"></span>+</div>
-          <h5>Babies Saved</h5>
-        </div>
-        <div class="col_one_fourth nobottommargin center" data-animate="bounceIn">
-          &nbsp;
-        </div>
-
-      </div>
-    </div>
-
-    <div class="row common-height clearfix">
-
-      <div class="col-sm-5 col-padding" style="background: url('{{ page.director_img_path }}') center center no-repeat; background-size: cover;"></div>
-
-      <div class="col-sm-7 col-padding">
-        <div>
-          <div class="heading-block">
-            <span class="before-heading color editable">Director</span>
-            <h3 class="editable">Shelia Hood</h3>
-          </div>
-
-          <div class="row clearfix">
-
-            <div class="col-md-6">
-              <p class="editable">Shelia directs the business operations of Trinity Church, overseeing Financial operations, Facility construction, operation, and maintenance, Human Resource activities, Communications, Information Technology and Asset Protection.<br />&nbsp;<br />Shelia brings 24 years experience in the corporate arena to Trinity where she was responsible for managing multi-million dollar capital expenses, and budgeting as well as directing procedures and operations for Human Resources and Facilities. In 1995 she felt the call of God to transition to Trinity Church to serve as the Administrator. Shelia believes all of her previous business training and experience was merely preparation for being a part of God&rsquo;s plan at Trinity Church.<br />&nbsp;<br />Shelia and Jim Hood have been married for many years, have four children and live in Duncanville with an ever changing menagerie of animals.</p>
-              <a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-                <i class="icon-facebook"></i>
-                <i class="icon-facebook"></i>
-              </a>
-              <a href="#" class="social-icon inline-block si-small si-light si-rounded si-twitter">
-                <i class="icon-twitter"></i>
-                <i class="icon-twitter"></i>
-              </a>
-              <a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
-                <i class="icon-gplus"></i>
-                <i class="icon-gplus"></i>
-              </a>
+        <div class="col-sm-7 col-padding">
+          <div>
+            <div class="heading-block">
+              <span class="before-heading color editable">{{ d.role }}</span>
+              <h3>{{ d.name }}</h3>
             </div>
 
-            <div class="col-md-6">
-              <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="row clearfix">
+
+              <div class="col-md-6">
+                <p>{{ d.first_description }}</p>
+
+                {% if d.facebook != '' and d.facebook != nil%}
+                  <a href="http://facebook.com/{{ d.facebook }}" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+                    <i class="icon-facebook"></i>
+                    <i class="icon-facebook"></i>
+                  </a>
+                {% endif %}
+
+                {% if d.twitter != '' and d.twitter != nil%}
+                  <a href="http://twitter.com/{{ d.twitter }}" class="social-icon inline-block si-small si-light si-rounded si-twitter">
+                    <i class="icon-twitter"></i>
+                    <i class="icon-twitter"></i>
+                  </a>
+                {% endif %}
+
+                {% if d.google != '' and d.google != nil%}
+                  <a href="https://plus.google.com/u/0/+{{ d.google }}" class="social-icon inline-block si-small si-light si-rounded si-gplus">
+                    <i class="icon-gplus"></i>
+                    <i class="icon-gplus"></i>
+                  </a>
+                {% endif %}
+              </div>
+
+              <div class="col-md-6">
+                <p>{{ d.second_description }}</p>
+              </div>
+
             </div>
 
           </div>
-
         </div>
-      </div>
 
-    </div>
+        {% if thecycle == 'even' %}
+          <div class="col-sm-5 col-padding director" style="background: url('{{ d.director_img_path }}') center center no-repeat; background-size: cover;"></div>
+        {% endif %}
+
+      </div>
+    {% endfor %}
 
     <div class="container clearfix">
 

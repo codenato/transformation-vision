@@ -8,6 +8,9 @@ price: '85 - 10,000'
 price_link: 'https://www.eventbrite.com/e/a-night-of-hope-oil-barons-ball-tickets-25997745958?ref=ebtnebtckt'
 header_imgthumb_path: /images/events/thumbs/gala_event.jpg
 header_img_path: /images/events/thumbs/gala_event.jpg
+sponsors:
+  - name: Trinity Church
+    img_path: /images/clients/logo_trinitymissions.jpg
 ---
 
 

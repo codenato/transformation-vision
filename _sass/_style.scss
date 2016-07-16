@@ -13019,6 +13019,16 @@ body:not(.no-transition) #wrapper,
   height: 600px;
 }
 
+.btn-special {
+  border-color: white !important;
+  color: white !important;
+
+  &:hover, &:active {
+    color: #de2e49 !important;
+    background: white !important;
+  }
+}
+
 @media only screen and (max-width : 440px) {
 
   .director {

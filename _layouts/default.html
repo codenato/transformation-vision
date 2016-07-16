@@ -11,7 +11,7 @@
 
       {% if page.title == 'Home' %}
 
-        <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix" data-loop="true">
+        <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix" data-loop="true" data-autoplay="4000">
 
           <div class="slider-parallax-inner">
 
@@ -26,7 +26,7 @@
                         <p data-caption-animate="fadeInUp" data-caption-delay="200">{{ s.sub_title }}</p>
 
                         {% if s.button_link != nil %}
-                          <a href="{{ s.button_link }}" data-caption-animate="fadeInUp" data-caption-delay="300" class="button button-border button-light button-rounded button-reveal tright button-large topmargin hidden-xs"><i class="icon-angle-right"></i><span>{{ s.button_name }}</span></a>
+                          <a href="{{ s.button_link }}" data-caption-animate="fadeInUp" data-caption-delay="300" class="button button-border {% if s.text_white == true %}button-light{% endif %} button-rounded button-reveal tright button-large topmargin hidden-xs"><i class="icon-angle-right"></i><span>{{ s.button_name }}</span></a>
                         {% endif %}
                       </div>
                     </div>

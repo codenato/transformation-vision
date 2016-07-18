@@ -13029,6 +13029,10 @@ body:not(.no-transition) #wrapper,
   }
 }
 
+.by {
+  display: none;
+}
+
 @media only screen and (max-width : 440px) {
 
   .director {

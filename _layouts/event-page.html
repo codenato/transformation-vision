@@ -25,7 +25,7 @@ layout: default
             </div>
             <div class="panel-body">
               <ul class="iconlist nobottommargin">
-                <li><i class="icon-calendar3"></i> {{ page.start_at_date }}</li>
+                <li><i class="icon-calendar3"></i> {{ page.start_at_date | date_to_string }}</li>
                 <li><i class="icon-time"></i> {{ page.start_time }} - {{ page.end_time }}</li>
                 <li><i class="icon-map-marker2"></i> {{ page.location }}</li>
                 {% if page.price %}

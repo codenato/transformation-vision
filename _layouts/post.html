@@ -38,6 +38,22 @@ layout: default
           <div class="entry-content notopmargin">
             {{content}}
           </div>
+
+          {% if page.gallery != nil %}
+            <div class="divider"><i class="icon-circle"></i></div>
+
+            <div class="col_full clearfix">
+
+              <h3>Gallery</h3>
+
+              <div class="masonry-thumbs col-4" data-big="4" data-lightbox="gallery">
+                {% for g in page.gallery %}
+                  <a href="{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1"></a>
+                {% endfor %}
+              </div>
+
+            </div>
+          {% endif %}
         </div><!-- .entry end -->
 
         <!-- Post Navigation

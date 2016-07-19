@@ -145,16 +145,26 @@
 
     {% if page._is_contact == true %}
       <script type="text/javascript">
-              var form = $('#template-contactform');
+          var form = $('#template-contactform');
 
-        	    form.submit(function(event) {
-        	        console.log('were here!!!');
-        	        $('.form-process').hide();
-        	        $('.contact-form-result').text("{{ page.response_message }}");
-        	        console.log("{{ page.response_message }}");
-        	    });
+          form.submit(function(event) {
+              console.log('were here!!!');
+              $('.form-process').hide();
+              $('.contact-form-result').text("{{ page.response_message }}");
+              console.log("{{ page.response_message }}");
+          });
 
       </script>
+    {% endif %}
+
+    {% if page.url contains 'info' %}
+      <script type="text/javascript">
+        jQuery(document).ready( function($) {
+          var hash = window.location.hash.replace('/', '');
+          $('a[href="'+ hash +'"]').click();
+        });
+      </script>
+
     {% endif %}
 
   </body>

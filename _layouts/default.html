@@ -153,7 +153,9 @@
         //       $('.contact-form-result').text("{{ page.response_message }}");
         //       console.log("{{ page.response_message }}");
         //   });
-        function go() {
+        function go(e) {
+            e.preventDefault();
+            
             var form = $('#contact-form');
             $.ajax({
               url: '/success.html',

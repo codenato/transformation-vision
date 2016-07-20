@@ -156,29 +156,27 @@
               return data.join("&");
             }
             
-            jQuery(document).ready( function($) {
-                // Fetch the form element
-                var formEl = document.getElementById("template-contactform");
-                
-                console.log('im here');
-                
-                // Override the submit event
-                formEl.addEventListener("submit", function (e) {
-                  e.preventDefault();
-                
-                  var request = new XMLHttpRequest();
-                
-                  request.addEventListener("load", function () {
-                    if (request.status === 302) { // CloudCannon redirects on success
-                      $('.contact-form-result').text("{{ page.response_message }}");
-                      $('.form-process').hide();
-                    }
-                  });
-                
-                  request.open(formEl.method, formEl.action);
-                  request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-                  request.send(getFormDataString(formEl));
-                });
+            // Fetch the form element
+            var formEl = document.getElementById("template-contactform");
+            
+            console.log('im here');
+            
+            // Override the submit event
+            formEl.addEventListener("submit", function (e) {
+              e.preventDefault();
+            
+              var request = new XMLHttpRequest();
+            
+              request.addEventListener("load", function () {
+                if (request.status === 302) { // CloudCannon redirects on success
+                  $('.contact-form-result').text("{{ page.response_message }}");
+                  $('.form-process').hide();
+                }
+              });
+            
+              request.open(formEl.method, formEl.action);
+              request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+              request.send(getFormDataString(formEl));
             });
             
             

@@ -1,9 +1,0 @@
----
-title: Jam to Give Benefit Concert
-date: 2016-07-08T10:42:00.000Z
-header_imgthumb_path: /images/blog/grid/17.jpg
-header_img_path: /images/blog/full/17.jpg
-categories: jekyll update
----
-
-

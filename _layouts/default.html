@@ -167,6 +167,7 @@
             e.preventDefault();
             
             var form = $('#contact-form');
+            console.log(getFormDataString(form[0]));
             $.ajax({
               url: '/success.html',
               data: getFormDataString(form[0]),

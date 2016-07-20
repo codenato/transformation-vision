@@ -169,7 +169,7 @@
             var form = $('#contact-form');
             $.ajax({
               url: '/success.html',
-              data: getFormDataString(form),
+              data: getFormDataString(form[0]),
               contentType: "application/x-www-form-urlencoded",
               type: 'POST',
               success: function(data){

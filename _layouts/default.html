@@ -172,6 +172,7 @@
             var request = new XMLHttpRequest();
     
             request.addEventListener("load", function () {
+                console.log(request.status);
                 if (request.status === 302) { // CloudCannon redirects on success
                   $('.contact-form-result').text("{{ page.response_message }}");
                 }

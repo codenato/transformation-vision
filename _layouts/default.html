@@ -169,9 +169,11 @@
               var request = new XMLHttpRequest();
             
               request.addEventListener("load", function () {
+                console.log('im here before');
                 if (request.status === 302) { // CloudCannon redirects on success
                   $('.contact-form-result').text("{{ page.response_message }}");
                   $('.form-process').hide();
+                  console.log('im here2');
                 }
               });
             

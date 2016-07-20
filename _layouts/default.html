@@ -159,11 +159,12 @@
             // Fetch the form element
             var formEl = document.getElementById("template-contactform");
             
-            console.log('im here');
+            
             
             // Override the submit event
             formEl.addEventListener("submit", function (e) {
               e.preventDefault();
+              console.log('im here');
             
               var request = new XMLHttpRequest();
             

@@ -145,7 +145,7 @@
     
     {% if page._is_contact == true %}
       <script type="text/javascript">
-          var form = $('#contact-form');
+          
 
         //   form.submit(function(event) {
         //       event.preventDefault();
@@ -153,8 +153,9 @@
         //       $('.contact-form-result').text("{{ page.response_message }}");
         //       console.log("{{ page.response_message }}");
         //   });
-          
-          $.ajax({
+        function go() {
+            var form = $('#contact-form');
+            $.ajax({
               url: '/success.html',
               data: new FormData(form),
               processData: false,
@@ -166,6 +167,11 @@
                 console.log("{{ page.response_message }}");
               }
            });
+            
+            
+        }
+          
+          
 
       </script>
     {% endif %}

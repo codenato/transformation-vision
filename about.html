@@ -67,6 +67,7 @@ directors:
       mediator specializing in public policy, engineering, and municipal
       conflicts. Rob also serves on numerous regional boards, non-profit
       corporation boards, and ministries.
+staff:
   - role: Board Treasurer
     name: Shelia Hood
     director_img_path: /images/directors/sheila hood.jpg
@@ -166,15 +167,60 @@ _comments:
 
     </div>
 
-    <div class="container clearfix">
+    <div class="container clearfix bottommargin">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/JLKP-CmtIMw" frameborder="0" allowfullscreen></iframe>
       <div class="clear"></div>
-      <div class="line"></div>
     </div>
 
 
-    <div class="row clearfix">
+    <div class="container clearfix">
+      <div class="fancy-title title-border">
+        <h3>Directors</h3>
+      </div>
+
       {% for d in page.directors %}
+        <div class="col-md-6 bottommargin">
+          <div class="team team-list clearfix">
+            <div class="team-image">
+              <img src="{{ d.director_img_path }}" alt="John Doe" />
+            </div>
+            <div class="team-desc">
+              <div class="team-title"><h4>{{ d.name }}</h4><span>{{ d.role }}</span></div>
+              <div class="team-content">
+                <p>{{ d.description }}</p>
+              </div>
+              {% if d.facebook != '' and d.facebook != nil%}
+                <a href="http://facebook.com/{{ d.facebook }}" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+                  <i class="icon-facebook"></i>
+                  <i class="icon-facebook"></i>
+                </a>
+              {% endif %}
+
+              {% if d.twitter != '' and d.twitter != nil%}
+                <a href="http://twitter.com/{{ d.twitter }}" class="social-icon inline-block si-small si-light si-rounded si-twitter">
+                  <i class="icon-twitter"></i>
+                  <i class="icon-twitter"></i>
+                </a>
+              {% endif %}
+
+              {% if d.google != '' and d.google != nil%}
+                <a href="https://plus.google.com/u/0/+{{ d.google }}" class="social-icon inline-block si-small si-light si-rounded si-gplus">
+                  <i class="icon-gplus"></i>
+                  <i class="icon-gplus"></i>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="container clearfix">
+      <div class="fancy-title title-border">
+        <h3>Staff</h3>
+      </div>
+
+      {% for d in page.staff %}
         <div class="col-md-6 bottommargin">
           <div class="team team-list clearfix">
             <div class="team-image">

@@ -5,6 +5,8 @@ header_imgthumb_path: /images/others/golf_tournament.png
 header_img_path: /images/others/golf_tournament.png
 categories:
 gallery:
+  - g_img_path:
+    g_img_thumb_path:
 ---
 
 

@@ -147,12 +147,25 @@
       <script type="text/javascript">
           var form = $('#contact-form');
 
-          form.submit(function(event) {
-              event.preventDefault();
-              $('.form-process').hide();
-              $('.contact-form-result').text("{{ page.response_message }}");
-              console.log("{{ page.response_message }}");
-          });
+        //   form.submit(function(event) {
+        //       event.preventDefault();
+        //       $('.form-process').hide();
+        //       $('.contact-form-result').text("{{ page.response_message }}");
+        //       console.log("{{ page.response_message }}");
+        //   });
+          
+          $.ajax({
+              url: '/success',
+              data: new FormData(form),
+              processData: false,
+              contentType: false,
+              type: 'POST',
+              success: function(data){
+                $('.form-process').hide();
+                $('.contact-form-result').text("{{ page.response_message }}");
+                console.log("{{ page.response_message }}");
+              }
+           });
 
       </script>
     {% endif %}

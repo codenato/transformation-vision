@@ -145,15 +145,37 @@
 
     {% if page._is_contact == true %}
       <script type="text/javascript">
-          var form = $('#template-contactform');
-
-          form.submit(function(event) {
-              console.log('were here!!!');
-              $('.form-process').hide();
-              $('.contact-form-result').text("{{ page.response_message }}");
-              $('.contact-form-result').show();
-              console.log("{{ page.response_message }}");
-          });
+          function getFormDataString(formEl) {
+              var formData = new FormData(formEl),
+                  data = [];
+            
+              for (var keyValue of formData) {
+                data.push(encodeURIComponent(keyValue[0]) + "=" + encodeURIComponent(keyValue[1]));
+              }
+            
+              return data.join("&");
+            }
+            
+            // Fetch the form element
+            var formEl = document.getElementById("template-contactform");
+            
+            // Override the submit event
+            formEl.addEventListener("submit", function (e) {
+              e.preventDefault();
+            
+              var request = new XMLHttpRequest();
+            
+              request.addEventListener("load", function () {
+                if (request.status === 302) { // CloudCannon redirects on success
+                  $('.contact-form-result').text("{{ page.response_message }}");
+                  $('.form-process').hide();
+                }
+              });
+            
+              request.open(formEl.method, formEl.action);
+              request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+              request.send(getFormDataString(formEl));
+            });
 
       </script>
     {% endif %}

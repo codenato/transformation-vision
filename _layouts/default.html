@@ -145,6 +145,16 @@
     
     {% if page._is_contact == true %}
       <script type="text/javascript">
+        function getFormDataString(formEl) {
+          var formData = new FormData(formEl),
+              data = [];
+        
+          for (var keyValue of formData) {
+            data.push(encodeURIComponent(keyValue[0]) + "=" + encodeURIComponent(keyValue[1]));
+          }
+        
+          return data.join("&");
+        }
           
 
         //   form.submit(function(event) {
@@ -159,9 +169,8 @@
             var form = $('#contact-form');
             $.ajax({
               url: '/success.html',
-              data: new FormData(form),
-              processData: false,
-              contentType: false,
+              data: getFormDataString(form),
+              contentType: "application/x-www-form-urlencoded",
               type: 'POST',
               success: function(data){
                 $('.form-process').hide();

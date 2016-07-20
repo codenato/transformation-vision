@@ -145,42 +145,40 @@
 
     {% if page._is_contact == true %}
       <script type="text/javascript">
-          function getFormDataString(formEl) {
-              var formData = new FormData(formEl),
-                  data = [];
+        //   function getFormDataString(formEl) {
+        //       var formData = new FormData(formEl),
+        //           data = [];
             
-              for (var keyValue of formData) {
-                data.push(encodeURIComponent(keyValue[0]) + "=" + encodeURIComponent(keyValue[1]));
-              }
+        //       for (var keyValue of formData) {
+        //         data.push(encodeURIComponent(keyValue[0]) + "=" + encodeURIComponent(keyValue[1]));
+        //       }
             
-              return data.join("&");
-            }
+        //       return data.join("&");
+        //     }
             
-            // Fetch the form element
-            var formEl = document.getElementById("contact-form");
+        //     // Fetch the form element
+        //     var formEl = document.getElementById("contact-form");
             
+        //     // Override the submit event
+        //     formEl.addEventListener("submit", function (e) {
+        //       e.preventDefault();
+        //       console.log('im here');
             
+        //       var request = new XMLHttpRequest();
             
-            // Override the submit event
-            formEl.addEventListener("submit", function (e) {
-              e.preventDefault();
-              console.log('im here');
+        //       request.addEventListener("load", function () {
+        //         console.log('im here before');
+        //         if (request.status === 302) { // CloudCannon redirects on success
+        //           $('.contact-form-result').text("{{ page.response_message }}");
+        //           $('.form-process').hide();
+        //           console.log('im here2');
+        //         }
+        //       });
             
-              var request = new XMLHttpRequest();
-            
-              request.addEventListener("load", function () {
-                console.log('im here before');
-                if (request.status === 302) { // CloudCannon redirects on success
-                  $('.contact-form-result').text("{{ page.response_message }}");
-                  $('.form-process').hide();
-                  console.log('im here2');
-                }
-              });
-            
-              request.open(formEl.method, formEl.action);
-              request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-              request.send(getFormDataString(formEl));
-            });
+        //       request.open(formEl.method, formEl.action);
+        //       request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        //       request.send(getFormDataString(formEl));
+        //     });
             
             
 

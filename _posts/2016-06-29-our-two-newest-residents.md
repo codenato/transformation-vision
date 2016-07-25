@@ -5,7 +5,9 @@ header_imgthumb_path: /welcomenewresidents.jpg
 header_img_path: /welcomenewresidents.jpg
 categories:
 gallery:
-  - g_img_path:
+  - g_img_path: /images/others/new_res.png
+    g_img_thumb_path:
+  - g_img_path: /images/others/screen shot 2016-07-25 at 11.02.03 am.png
     g_img_thumb_path:
 _comments:
   header_imgthumb_path: 500x280

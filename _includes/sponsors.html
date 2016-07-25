@@ -1,9 +1,14 @@
-<ul class="clients-grid grid-6 bottommargin clearfix">
-    {% for s in page.sponsors %}
-      <li>
-        <a href="{% if s.web_site != "" and s.web_site != nil %} {{ s.web_site }} {% else %} javascript:void(0) {% endif %}">
-          <img src="{{s.img_path}}">
-        </a>
-      </li>
-    {% endfor %}
-</ul>
+{% if page.sponsors[0].img_path != nil %}
+
+  <h4 class="center">Meet our Sponsors</h4>
+  <ul class="clients-grid grid-6 bottommargin clearfix">
+      {% for s in page.sponsors %}
+        <li>
+          <a href="{% if s.web_site != "" and s.web_site != nil %} {{ s.web_site }} {% else %} javascript:void(0) {% endif %}">
+            <img src="{{s.img_path}}">
+          </a>
+        </li>
+      {% endfor %}
+  </ul>
+
+{% endif %}

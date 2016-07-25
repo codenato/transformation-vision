@@ -15,4 +15,6 @@ _comments:
 ---
 
 
-Hope Mansion is busy and full of life with moms and moms-to-be. Thank you for all your support in these ladies lives. Our two newest residents, Carolyn and Arelia, feel blessed and excited to be at a place where so many people love them and call them family…thank you. If you have extra time this summer, please consider serving at Hope Mansion to impact these ladies lives and the lives of the other ladies that call Hope home. Some of our service opportunities include teaching a class, one on one case management and mentoring, administrative help, and serving on our volunteer team. Please contact us for more info.
+Hope Mansion is busy and full of life with moms and moms-to-be. Thank you for all your support in these ladies lives. Our two newest residents, Carolyn and Arelia, feel blessed and excited to be at a place where so many people love them and call them family…thank you.
+<br>
+<br>If you have extra time this summer, please consider serving at Hope Mansion to impact these ladies lives and the lives of the other ladies that call Hope home. Some of our service opportunities include teaching a class, one on one case management and mentoring, administrative help, and serving on our volunteer team. Please contact us for more info.

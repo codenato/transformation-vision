@@ -10,4 +10,6 @@ gallery:
 ---
 
 
-The concert was great…. etc etc etc&nbsp;
+Greetings!
+
+&nbsp;&nbsp; We are so thankful for all of our partners in the community! Just to highlight a couple...this weekend, Hillside Village in Cedar Hill featured Hope Mansion during their Jam to Give concert! Thank you for your donation and support of our ministry and the ladies that we serve!

@@ -10,4 +10,4 @@ gallery:
 ---
 
 
-The concert was great….
+The concert was great…. etc etc etc&nbsp;

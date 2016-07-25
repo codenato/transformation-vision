@@ -1,8 +1,8 @@
 ---
 title: Our two newest residents
 date: 2016-06-30T00:00:00.000Z
-header_imgthumb_path:
-header_img_path:
+header_imgthumb_path: /welcomenewresidents.jpg
+header_img_path: /welcomenewresidents.jpg
 categories:
 gallery:
   - g_img_path:

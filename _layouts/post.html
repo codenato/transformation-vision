@@ -15,15 +15,14 @@ layout: default
 
           <!-- Entry Title
           ============================================= -->
-          <div class="entry-title">
-            <h2>{{ page.title }}</h2>
-          </div><!-- .entry-title end -->
+          <!-- <div class="entry&#45;title"> -->
+          <!--   <h2>{{ page.title }}</h2> -->
+          <!-- </div><!&#45;&#45; .entry&#45;title end &#45;&#45;> -->
 
           <!-- Entry Meta
           ============================================= -->
           <ul class="entry-meta clearfix">
             <li><i class="icon-calendar3"></i> {{ page.date | date_to_long_string }}</li>
-            <li><a href="#"><i class="icon-user"></i> {{ page.author }}</a></li>
             <li><a href="#"><i class="icon-camera-retro"></i></a></li>
           </ul><!-- .entry-meta end -->
 
@@ -39,7 +38,7 @@ layout: default
             {{content}}
           </div>
 
-          {% if page.gallery != nil %}
+          {% if page.gallery[0].g_img_path != nil %}
             <div class="divider"><i class="icon-circle"></i></div>
 
             <div class="col_full clearfix">

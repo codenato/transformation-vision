@@ -142,20 +142,20 @@
         });
       </script>
     {% endif %}
-    
+
     {% if page._is_contact == true %}
       <script type="text/javascript">
         function getFormDataString(formEl) {
           var formData = new FormData(formEl),
               data = [];
-        
+
           for (var keyValue of formData) {
             data.push(encodeURIComponent(keyValue[0]) + "=" + encodeURIComponent(keyValue[1]));
           }
-        
+
           return data.join("&");
         }
-          
+
 
         //   form.submit(function(event) {
         //       event.preventDefault();
@@ -165,12 +165,12 @@
         //   });
         function go(e) {
             e.preventDefault();
-            
+
             var formEl = document.getElementById("contact-form");
             console.log(getFormDataString(formEl));
-            
+
             var request = new XMLHttpRequest();
-    
+
             request.addEventListener("load", function () {
                 console.log(request.status);
                 if (request.status === 200) { // CloudCannon redirects on success
@@ -180,15 +180,15 @@
                   $('.contact-form-result').show();
                 }
             });
-            
+
             $('.form-process').show();
             request.open(formEl.method, formEl.action);
             request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             request.send(getFormDataString(formEl));
-            
+
         }
-          
-          
+
+
 
       </script>
     {% endif %}
@@ -198,6 +198,31 @@
         jQuery(document).ready( function($) {
           var hash = window.location.hash.replace('/', '');
           $('a[href="'+ hash +'"]').click();
+        });
+      </script>
+
+    {% endif %}
+
+    {% if page.url contains 'hero'%}
+      <script type="text/javascript" src="/js/jquery.nivo.js"></script>
+      <script type="text/javascript">
+        jQuery(document).ready( function($) {
+          $('.nivoSlider').nivoSlider({
+            effect: 'random',
+            slices: 15,
+            boxCols: 12,
+            boxRows: 6,
+            animSpeed: 500,
+            pauseTime: 8000,
+            directionNav: true,
+            controlNav: true,
+            pauseOnHover: true,
+            prevText: '<i class="icon-angle-left"></i>',
+            nextText: '<i class="icon-angle-right"></i>',
+            afterLoad: function(){
+              $('#slider').find('.nivo-caption').addClass('slider-caption-bg');
+            }
+          });
         });
       </script>
 

@@ -30,7 +30,7 @@ _comments:
 
 <div class="content-wrap">
 
-  <div class="container clearfix">
+  <div class="container clearfix bottommargin">
 
     <div class="col_one_third">
       <div class="feature-box fbox-border fbox-effect">
@@ -95,23 +95,35 @@ _comments:
     </div>
 
     <div class="clear"></div>
-    <div class="line"></div>
-
   </div>
 
-  <div class="section nomargin noborder bgcolor dark" style="padding: 25px 0;">
-    <div class="container center clearfix">
-
-      <div class="heading-block" style="margin-bottom: 15px">
-        <h2 class="editable">"Don't ever be afraid or discouraged! I am the Lord your God, and I will be there to help you wherever you go"</h2>
-        <span class="editable">Joshua 1:9</span>
-      </div>
-
-      <a href="https://visitor.r20.constantcontact.com/manage/optin?v=001Jt_6JQUUtuJLbURoKQeX3xo9fUosfztvwpbifbq5WyGQP6V8dwWaNA08oNtrIOeQhK132av4uSJ9WsJkgQFwOTstA78htWjydpue2xzX4fA%3D" target="_target" class="button button-rounded button-reveal button-large button-border tright btn-special">
-        <i class="icon-email2"></i><span>Subscribe to our Newsletter</span>
-      </a>
-
+  <a class="button button-full center tright">
+    <div class="container clearfix editable">
+      Providing residency for <strong>women</strong> and their <strong>newborn.</strong>
     </div>
+  </a>
+
+  <div id="related-portfolio" class="owl-carousel owl-carousel-full portfolio-carousel portfolio-notitle portfolio-nomargin carousel-widget" data-autoplay="2000" data-loop="true" data-margin="0" data-nav="true" data-pagi="false" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="4">
+
+    {% for r in site.data.residents %}
+      <div class="oc-item">
+        <div class="iportfolio">
+          <div class="portfolio-image">
+            <a href="portfolio-single.html">
+              <img src="{{ r.img_thumb_path }}" />
+            </a>
+            <div class="portfolio-overlay">
+              <a href="{{ r.img_path }}" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-desc">
+            <h3><a href="portfolio-single.html">{{ r.name }}</a></h3>
+            <span>{{ r.other_info }}</span>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
   </div>
 
   <div class="container clearfix">
@@ -166,7 +178,7 @@ _comments:
       <h3>News</h3>
     </div>
 
-    <div id="oc-posts" class="owl-carousel posts-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="false" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="4">
+    <div id="oc-posts" class="owl-carousel posts-carousel carousel-widget bottommargin" data-margin="20" data-nav="true" data-pagi="false" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="4">
 
       {% for post in site.posts limit: 6 %}
         <div class="oc-item">
@@ -194,37 +206,21 @@ _comments:
     </div>
 
     <div class="clear"></div>
-    <div class="line"></div>
-
   </div>
 
-  <a class="button button-full center tright">
-    <div class="container clearfix editable">
-      Providing residency for <strong>women</strong> and their <strong>newborn.</strong>
-    </div>
-  </a>
+  <div class="section nomargin noborder bgcolor dark footer-stick" style="padding: 25px 0;">
+    <div class="container center clearfix">
 
-  <div id="related-portfolio" class="owl-carousel owl-carousel-full portfolio-carousel portfolio-notitle portfolio-nomargin footer-stick carousel-widget" data-autoplay="2000" data-loop="true" data-margin="0" data-nav="true" data-pagi="false" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="4">
-
-    {% for r in site.data.residents %}
-      <div class="oc-item">
-        <div class="iportfolio">
-          <div class="portfolio-image">
-            <a href="portfolio-single.html">
-              <img src="{{ r.img_thumb_path }}" />
-            </a>
-            <div class="portfolio-overlay">
-              <a href="{{ r.img_path }}" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-            </div>
-          </div>
-          <div class="portfolio-desc">
-            <h3><a href="portfolio-single.html">{{ r.name }}</a></h3>
-            <span>{{ r.other_info }}</span>
-          </div>
-        </div>
+      <div class="heading-block" style="margin-bottom: 15px">
+        <h2 class="editable">"Don't ever be afraid or discouraged! I am the Lord your God, and I will be there to help you wherever you go"</h2>
+        <span class="editable">Joshua 1:9</span>
       </div>
-    {% endfor %}
 
+      <a href="https://visitor.r20.constantcontact.com/manage/optin?v=001Jt_6JQUUtuJLbURoKQeX3xo9fUosfztvwpbifbq5WyGQP6V8dwWaNA08oNtrIOeQhK132av4uSJ9WsJkgQFwOTstA78htWjydpue2xzX4fA%3D" target="_target" class="button button-rounded button-reveal button-large button-border tright btn-special">
+        <i class="icon-email2"></i><span>Subscribe to our Newsletter</span>
+      </a>
+
+    </div>
   </div>
 
 </div>

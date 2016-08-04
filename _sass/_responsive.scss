@@ -603,14 +603,12 @@
     margin: 0 !important; 
   }
 
-	#top-search a,
+	#top-search ,
 	#top-cart,
 	#side-panel-trigger {
-		position: absolute;
-		top: 0;
-		left: auto;
-		right: 15px;
-		margin: 40px 0;
+    position: absolute;
+    top: 16px;
+		right: -15px;
 		-webkit-transition: margin .4s ease;
 		-o-transition: margin .4s ease;
 		transition: margin .4s ease;
@@ -1554,6 +1552,9 @@
 	#top-cart { display: none; }
 
 	#top-search a { right: 15px; }
+	#top-search  { 
+    position: relative;
+  }
 
 	#top-search form input { padding-right: 30px; }
 
@@ -1772,7 +1773,7 @@ only screen and (                min-resolution: 2dppx) and (max-width: 991px) {
 
 @media only screen and (max-width : 440px) {
   #top-search {
-    margin: 0 !important;
+    margin: -22px 12px 15px 0px !important;
     width: 100%;
     text-align: center;
 

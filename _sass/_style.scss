@@ -13048,6 +13048,12 @@ body:not(.no-transition) #wrapper,
   color: #de2e49;
 }
 
+.editable {
+  img {
+    float: left;
+  }
+}
+
 @media only screen and (max-width : 440px) {
 
   .director {

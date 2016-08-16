@@ -125,6 +125,25 @@ staff:
       with being so familiar with how to throw out a lifeline to those in need of
       a turnaround, she believes bringing them back into a place of wholeness as
       well as stability against all the odds that world says they cannot do it.
+gallery:
+  - g_img_thumb_path: /images/blog/full/1.jpg
+    g_img_path: /images/blog/grid/1.jpg
+  - g_img_thumb_path: /images/blog/full/10.jpg
+    g_img_path: /images/blog/grid/10.jpg
+  - g_img_thumb_path: /images/blog/full/12.jpg
+    g_img_path: /images/blog/grid/12.jpg
+  - g_img_thumb_path: /images/blog/full/17.jpg
+    g_img_path: /images/blog/grid/17.jpg
+  - g_img_thumb_path: /images/blog/full/13.jpg
+    g_img_path: /images/blog/grid/13.jpg
+  - g_img_thumb_path: /images/blog/full/3.jpg
+    g_img_path: /images/blog/grid/3.jpg
+  - g_img_thumb_path: /images/blog/full/1.jpg
+    g_img_path: /images/blog/grid/1.jpg
+  - g_img_thumb_path: /images/blog/full/12.jpg
+    g_img_path: /images/blog/grid/12.jpg
+  - g_img_thumb_path: /images/blog/full/13.jpg
+    g_img_path: /images/blog/grid/13.jpg
 _comments:
   director_img_path: 450 x 550
 ---
@@ -162,6 +181,26 @@ _comments:
         </div>
 
         <p class="editable">Hope Mansion has been helping single, pregnant women in need of housing and hope since 2012. &nbsp;Of those women:<br />- 100% were homeless<br />- 65% moved forward in their education<br />- 91% chose single parenting<br />- 9% chose adoption</p>
+
+      </div>
+
+    </div>
+
+    <div class="container clearfix">
+
+      <div class="col_full">
+
+        <div class="heading-block fancy-title nobottomborder title-bottom-border">
+          <h4 class="editable"><span>OUR HOME.</span></h4>
+        </div>
+
+        <p class="editable">Hope Mansion was purchased in January 2011. After 18 months of renovation, the mansion opened in September, 2012. With over 14,000 square feet of living space, Hope Mansion has the capacity to house up to 15 girls. According to Mayor Rob Franke, this has become a treasure in the city of Cedar Hill. The entire community seems to have gathered around the facility with generous donations from businesses, other churches and friends. Hope Mansion presents an example of genuine Christian compassion influencing lives and a community. </p>
+
+        <div class="masonry-thumbs col-4" data-big="1" data-lightbox="gallery">
+          {% for g in page.gallery %}
+            <a href="{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1"></a>
+          {% endfor %}
+        </div>
 
       </div>
 

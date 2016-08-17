@@ -22,7 +22,7 @@
           {% for my_page in pages_sorted %}
             {% if my_page.title %}
               {% unless my_page.menu_order == '' or my_page.menu_order == nil %}
-                <li class="current"><a href="{{ my_page.url | prepend: site.baseurl }}"><div>{{ my_page.title }}</div></a></li>
+                <li class="current"><a href="{{ my_page.url | prepend: site.baseurl }}{% if my_page.url contains 'info' %}#testimonies{% endif %}"><div>{% if my_page.title_aux != null  %}{{my_page.title_aux}} {% else %} {{ my_page.title }} {% endif %}</div></a></li>
               {% endunless %}
             {% endif %}
           {% endfor %}

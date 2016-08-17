@@ -127,7 +127,7 @@ staff:
       well as stability against all the odds that world says they cannot do it.
 gallery:
   - g_img_thumb_path: /images/blog/full/1.jpg
-    g_img_path: /images/blog/grid/1.jpg
+    g_img_path: /images/blog/full/1.jpg
   - g_img_thumb_path: /images/blog/full/10.jpg
     g_img_path: /images/blog/grid/10.jpg
   - g_img_thumb_path: /images/blog/full/12.jpg
@@ -198,7 +198,7 @@ _comments:
 
         <div class="masonry-thumbs col-4" data-big="1" data-lightbox="gallery">
           {% for g in page.gallery %}
-            <a href="{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1"></a>
+            <a href="{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1" /></a>
           {% endfor %}
         </div>
 

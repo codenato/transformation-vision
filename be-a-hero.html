@@ -8,12 +8,12 @@ slides:
     img_path: /images/others/be my hero slide2.jpg
   - title: Be one of us
     img_path: /images/others/herousofhope_slide.jpg
-friends_path:
-  - /images/clients/1.png
-  - /images/clients/1.png
-  - /images/clients/1.png
-  - /images/clients/1.png
-  - /images/clients/1.png
+friends:
+  - img_path: /images/clients/1.png
+  - img_path: /images/clients/1.png
+  - img_path: /images/clients/1.png
+  - img_path: /images/clients/1.png
+  - img_path: /images/clients/1.png
 volunteer_photos:
   - title: Title
     desc: Description
@@ -108,10 +108,10 @@ volunteer_photos:
         </div>
 
         <ul class="clients-grid grid-6 bottommargin clearfix">
-            {% for s in page.friends_path %}
+            {% for s in page.friends %}
               <li>
                 <a href="javascript:void(0)">
-                  <img src="{{s}}" />
+                  <img src="{{s.img_path}}" />
                 </a>
               </li>
             {% endfor %}

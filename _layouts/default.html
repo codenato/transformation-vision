@@ -137,7 +137,7 @@
 
         jQuery(document).ready( function($) {
           var time = am_pm_to_hours('{{ page.start_time }}').split(':');
-          var eventStartDate = new Date({{ page.start_at_date | date: "%Y" }}, {{ page.start_at_date | date: "%m" }}, {{ page.start_at_date | date: "%d" }}, time[0], time[1]);
+          var eventStartDate = new Date({{ page.start_at_date | date: "%Y" }}, {{ page.start_at_date | date: "%m" }} - 1, {{ page.start_at_date | date: "%d" }}, time[0], time[1]);
           $('#event-countdown').countdown({until: eventStartDate});
         });
       </script>

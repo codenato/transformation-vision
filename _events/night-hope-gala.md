@@ -17,4 +17,4 @@ WHEN: September 30th, 7:00PM
 
 WHERE: Eddie Deen's Ranch
 
-ATTIRE: Denim & Diamonds
+ATTIRE: Denim & Diamonds&nbsp;

@@ -13053,6 +13053,12 @@ body:not(.no-transition) #wrapper,
     float: left;
     margin-right: 15px;
   }
+
+  ul {
+    li {
+      list-style-position: inside;
+    }
+  }
 }
 
 @media only screen and (max-width : 440px) {

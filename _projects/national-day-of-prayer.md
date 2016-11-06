@@ -7,9 +7,25 @@ gallery:
   - g_img_path: /uploads/dsc-6585.jpg
     g_img_thumb_path: /uploads/dsc-6585.jpg
   - g_img_path: /uploads/dsc-6582.jpg
-    g_img_thumb_path:
-  - g_img_path:
-    g_img_thumb_path:
+    g_img_thumb_path: /uploads/dsc-6582.jpg
+  - g_img_path: /uploads/dsc-6520.jpg
+    g_img_thumb_path: /uploads/dsc-6520.jpg
+  - g_img_path: /uploads/dsc-6474.jpg
+    g_img_thumb_path: /uploads/dsc-6474.jpg
+  - g_img_path: /uploads/dsc-6449.jpg
+    g_img_thumb_path: /uploads/dsc-6449.jpg
+  - g_img_path: /uploads/dsc-6395.jpg
+    g_img_thumb_path: /uploads/dsc-6395.jpg
+  - g_img_path: /uploads/dsc-6384.jpg
+    g_img_thumb_path: /uploads/dsc-6384.jpg
+  - g_img_path: /uploads/dsc-6376.jpg
+    g_img_thumb_path: /uploads/dsc-6376.jpg
+  - g_img_path: /uploads/dsc-6374.jpg
+    g_img_thumb_path: /uploads/dsc-6374.jpg
+  - g_img_path: /uploads/dsc-6238.jpg
+    g_img_thumb_path: /uploads/dsc-6238.jpg
+  - g_img_path: /uploads/dsc-6221.jpg
+    g_img_thumb_path: /uploads/dsc-6221.jpg
 ---
 
 

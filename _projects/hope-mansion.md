@@ -15,4 +15,4 @@ With the opening of Hope Mansion, women in need will find a place to live, learn
 Hope Mansion operates under the umbrella of Transformation Vision Cedar Hill, a Texas nonprofit corporation, an organization with broad support from the business, education, spiritual, civic, and private sectors of Cedar Hill, Texas and the surrounding region.&nbsp; Although Hope Mansion is distinctly Christ-based, it is not affiliated with, or directed by, any particular church or denomination.
 <br>&nbsp;
 
-Website:&nbsp;[hopemansion.com](hopemansion.com)
+Website:&nbsp;[http://hopemansion.com](http://hopemansion.com)

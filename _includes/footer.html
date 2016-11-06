@@ -40,7 +40,7 @@
   <!--             {% for my_page in pages_sorted %} -->
   <!--               {% if my_page.title %} -->
   <!--                 {% unless my_page.menu_order == '' or my_page.menu_order == nil %} -->
-  <!--                   <li class="current"><a href="{{ my_page.url | prepend: site.baseurl }}"><div>{{ my_page.title }}</div></a></li> -->
+  <!--                   <li class="current"><a href="{{ my_page.url | prepend: site.baseurl }}"><div>{{ my_page.title }}</div> -->
   <!--                 {% endunless %} -->
   <!--               {% endif %} -->
   <!--             {% endfor %} -->
@@ -61,12 +61,12 @@
   <!--           <div class="row"> -->
   <!--  -->
   <!--             <div class="col&#45;md&#45;6 text&#45;center bottommargin&#45;sm"> -->
-  <!--               <div class="counter counter&#45;small"><span data&#45;from="100" data&#45;to="{{ site.data.general.womens_blessed }}" data&#45;refresh&#45;interval="50" data&#45;speed="2000" data&#45;comma="true"></span></div> -->
+  <!--               <div class="counter counter&#45;small"><span data&#45;from="100" data&#45;to="{{ site.data.general.womens_blessed }}" data&#45;refresh&#45;interval="50" data&#45;speed="2000" data&#45;comma="true"> -->
   <!--               <h5 class="nobottommargin">Womens Blessed</h5> -->
   <!--             </div> -->
   <!--  -->
   <!--             <div class="col&#45;md&#45;6 text&#45;center bottommargin&#45;sm"> -->
-  <!--               <div class="counter counter&#45;small"><span data&#45;from="100" data&#45;to="{{ site.data.general.babies_blessed }}" data&#45;refresh&#45;interval="50" data&#45;speed="2000" data&#45;comma="true"></span></div> -->
+  <!--               <div class="counter counter&#45;small"><span data&#45;from="100" data&#45;to="{{ site.data.general.babies_blessed }}" data&#45;refresh&#45;interval="50" data&#45;speed="2000" data&#45;comma="true"> -->
   <!--               <h5 class="nobottommargin">Babies Saved</h5> -->
   <!--             </div> -->
   <!--  -->
@@ -90,21 +90,21 @@
   <!--               <i class="icon&#45;facebook"></i> -->
   <!--               <i class="icon&#45;facebook"></i> -->
   <!--             </a> -->
-  <!--             <a href="http://facebook.com/{{ site.data.general.facebook }}" target="_target"><small style="display: block; margin&#45;top: 3px;"><strong>Like us</strong></small></a> -->
+  <!--             <a href="http://facebook.com/{{ site.data.general.facebook }}" target="_target"><small style="display: block; margin&#45;top: 3px;"><strong>Like us</strong></small> -->
   <!--           </div> -->
   <!--           <div class="col&#45;md&#45;4 clearfix"> -->
   <!--             <a href="http://twitter.com/{{ site.data.general.twitter }}" target="_target" class="social&#45;icon si&#45;dark si&#45;colored si&#45;twitter nobottommargin" style="margin&#45;right: 10px;"> -->
   <!--               <i class="icon&#45;twitter"></i> -->
   <!--               <i class="icon&#45;twitter"></i> -->
   <!--             </a> -->
-  <!--             <a href="http://twitter.com/{{ site.data.general.twitter }}" target="_target"><small style="display: block; margin&#45;top: 3px;"><strong>Follow us</strong></small></a> -->
+  <!--             <a href="http://twitter.com/{{ site.data.general.twitter }}" target="_target"><small style="display: block; margin&#45;top: 3px;"><strong>Follow us</strong></small> -->
   <!--           </div> -->
   <!--           <div class="col&#45;md&#45;4 clearfix"> -->
   <!--             <a href="http://instagram.com/{{ site.data.general.instagram }}" target="_target" class="social&#45;icon si&#45;dark si&#45;colored si&#45;instagram nobottommargin" style="margin&#45;right: 10px;"> -->
   <!--               <i class="icon&#45;instagram"></i> -->
   <!--               <i class="icon&#45;instagram"></i> -->
   <!--             </a> -->
-  <!--             <a href="http://instagram.com/{{ site.data.general.instagram }}" target="_target"><small style="display: block; margin&#45;top: 3px;"><strong>Follow us</strong></small></a> -->
+  <!--             <a href="http://instagram.com/{{ site.data.general.instagram }}" target="_target"><small style="display: block; margin&#45;top: 3px;"><strong>Follow us</strong></small> -->
   <!--           </div> -->
   <!--  -->
   <!--         </div> -->
@@ -123,11 +123,7 @@
 
     <div class="container clearfix">
 
-      <div class="col_half editable">
-        <img src="{{ "/images/footer-logo.svg" | prepend: site.baseurl }}" alt="Transformation Vision" class="footer-logo">
-
-        Copyrights &copy; 2016 All Rights Reserved by Hope Mansion Residential Group Home.<br />
-      </div>
+      <div class="col_half editable"><p><img alt="Transformation Vision" class="footer-logo" src="/images/footer-logo.svg" /> Copyrights &copy; 2016 All Rights Reserved by Transformation Vision.</p></div>
 
       <div class="col_half col_last tright">
         <div class="copyrights-menu copyright-links fright clearfix">

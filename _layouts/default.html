@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="stretched">
+  <body class="stretched dark">
 
     <div id="wrapper" class="clearfix">
 
@@ -44,7 +44,7 @@
       </section>
 
       {% else %}
-        <section id="page-title">
+        <section id="page-title" class="page-title-center page-title-parallax page-title-dark" style="background-image: url('{{page.header_img_path}}'); padding: 120px 0;" data-stellar-background-ratio="0.3">
 
           <div class="container clearfix">
             <h1>{{ page.title }}</h1>

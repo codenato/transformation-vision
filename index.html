@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+slogan: 'Welcome :)'
 menu_order: 1
 slides:
   - title: Welcome to the Mansion
@@ -32,102 +33,108 @@ _comments:
 
   <div class="container clearfix bottommargin">
 
-    <div class="col_one_third">
-      <div class="feature-box fbox-border fbox-effect">
-        <div class="fbox-icon">
-          <a href="/info#pregnant"><i class="icon-line-heart i-alt"></i></a>
-        </div>
-        <h3 class="editable">I'M pregnant. NOW WHAT?</h3>
-        <p class="editable">If you are pregnant, we want you to know you're not alone!</p>
-      </div>
+    <div class="divcenter center clearfix" style="max-width: 900px;">
+      <img class="bottommargin" src="../images/logo-side.svg" alt="">
+      <h1 class="editable">Welcome to the <span>Staging Point of Unity</span>.</h1>
+      <h2 class="editable">Uniting Spiritual, Political, Business, Educational, and Social Leaders to serve and steward the blessings of God in order to achieve our maximum potential.</h2>
     </div>
-
-    <div class="col_one_third">
-      <div class="feature-box fbox-border fbox-effect">
-        <div class="fbox-icon">
-          <a href="/info#testimonies"><i class="icon-world i-alt"></i></a>
-        </div>
-        <h3 class="editable">testimonies</h3>
-        <p class="editable">"I now know that being pregnant was not the end of my life, it's just a new chapter in my story." &nbsp;Mary</p>
-      </div>
-    </div>
-
-    <div class="col_one_third col_last">
-      <div class="feature-box fbox-border fbox-effect">
-        <div class="fbox-icon">
-          <a href="/info#our-program"><i class="icon-home i-alt"></i></a>
-        </div>
-        <h3 class="editable">our program</h3>
-        <p class="editable">It is a holistic program where residents can grow emotionally, intellectually, spiritually and through goal setting and planning.</p>
-      </div>
-    </div>
-
-    <div class="clear"></div>
 
     <div class="col_one_third nobottommargin">
-      <div class="feature-box fbox-border fbox-effect">
-        <div class="fbox-icon">
-          <a href="/be-a-hero"><i class="icon-line-sun i-alt"></i></a>
+      <div class="feature-box media-box">
+        <div class="fbox-media">
+          <img src="../images/services/1.jpg" alt="Why choose Us?">
         </div>
-        <h3 class="editable">get involved</h3>
-        <p class="editable">Prayer Partners<br />Volunteers<br />Financial Partners</p>
+        <div class="fbox-desc">
+          <h3>Title Here.<span class="subtitle">Because we are Reliable.</span></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
+        </div>
       </div>
     </div>
 
     <div class="col_one_third nobottommargin">
-      <div class="feature-box fbox-border fbox-effect">
-        <div class="fbox-icon">
-          <a href="/info#eligibility"><i class="icon-tint i-alt"></i></a>
+      <div class="feature-box media-box">
+        <div class="fbox-media">
+          <img src="../images/services/2.jpg" alt="Why choose Us?">
         </div>
-        <h3 class="editable">eligibility requirements</h3>
-        <p class="editable">Here you can check the basic requirements for consideration as a resident of Hope Mansion.</p>
+        <div class="fbox-desc">
+          <h3>Our Mission.<span class="subtitle">Yeah!</span></h3>
+          <p>Quos, non, esse eligendi ab accusantium voluptatem. Maxime eligendi beatae, atque tempora ullam. Vitae delectus quia, consequuntur rerum molestias quo.</p>
+        </div>
       </div>
     </div>
 
     <div class="col_one_third nobottommargin col_last">
-      <div class="feature-box fbox-border fbox-effect">
-        <div class="fbox-icon">
-          <a href="/info#faq"><i class="icon-question-sign i-alt"></i></a>
+      <div class="feature-box media-box">
+        <div class="fbox-media">
+          <img src="../images/services/3.jpg" alt="Why choose Us?">
         </div>
-        <h3 class="editable">Faq's</h3>
-        <p class="editable">Frequently Asked Questions (FAQs)</p>
+        <div class="fbox-desc">
+          <h3>What we Do.<span class="subtitle">Transforming Lifes</span></h3>
+          <p>Porro repellat vero sapiente amet vitae quibusdam necessitatibus consectetur, labore totam. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.</p>
+        </div>
       </div>
     </div>
 
     <div class="clear"></div>
   </div>
 
-  <a class="button button-full center tright">
-    <div class="container clearfix editable"><p>Providing residency for <strong>women</strong> and their <strong>newborns.</strong></p></div>
-  </a>
+  <div class="section parallax nobottommargin noborder dark" style="height: 450px; padding: 120px 0;">
 
-  <div id="related-portfolio" class="owl-carousel owl-carousel-full portfolio-carousel portfolio-notitle portfolio-nomargin carousel-widget" data-autoplay="2000" data-loop="true" data-margin="0" data-nav="true" data-pagi="false" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="4">
+    <div class="container clearfix">
 
-    {% for r in site.data.residents %}
-      <div class="oc-item">
-        <div class="iportfolio">
-          <div class="portfolio-image">
-            <a href="portfolio-single.html">
-              <img src="{{ r.img_thumb_path }}" />
-            </a>
-            <div class="portfolio-overlay">
-              <a href="{{ r.img_path }}" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-            </div>
-          </div>
-          <div class="portfolio-desc">
-            <h3><a href="portfolio-single.html">{{ r.name }}</a></h3>
-            <span>{{ r.other_info }}</span>
-          </div>
+      <div class="slider-caption slider-caption-center" style="position: relative;">
+        <div data-animate="fadeInUp">
+          <h2>Any message here</h2>
+          <p>More message here</p>
         </div>
       </div>
-    {% endfor %}
+
+    </div>
+
+    <div class="video-wrap">
+      <video poster="../images/videos/explore.jpg" preload="auto" loop autoplay muted>
+        <source src='../images/videos/explore.mp4' type='video/mp4' />
+        <source src='../images/videos/explore.webm' type='video/webm' />
+      </video>
+      <div class="video-overlay" style="background-color: rgba(0,0,0,0.1);"></div>
+    </div>
+
+  </div>
+
+  <div class="fancy-title title-center title-dotted-border topmargin">
+    <h1><span class="editable">Projects</span></h1>
+  </div>
+
+  <div class="container clearfix">
+    <div id="related-portfolio" class="owl-carousel portfolio-carousel carousel-widget" data-margin="30" data-nav="false" data-autoplay="5000" data-items-xxs="1" data-items-xs="2" data-items-sm="2" data-items-lg="2">
+
+      {% for prj in site.projects %}
+        <div class="oc-item">
+          <div class="iportfolio">
+            <div class="portfolio-image">
+              <a href="portfolio-single.html">
+                <img src="{{prj.header_imgthumb_path}}" alt="Project">
+              </a>
+              <div class="portfolio-overlay">
+                <a href="{{prj.url}}" class="center-icon"><i class="icon-line-ellipsis"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-desc text-center">
+              <h3><a href="portfolio-single.html">{{ prj.title }}</a></h3>
+              <span>{{ prj.brief }}</span>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
 
   </div>
 
   <div class="container clearfix">
 
     <div class="fancy-title title-center title-dotted-border topmargin">
-      <h3>Events</h3>
+      <h1><span class="editable">Events</span></h1>
     </div>
 
     <div id="oc-events" class="owl-carousel events-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="false" data-items-sm="1" data-items-md="2" data-items-lg="2">
@@ -172,51 +179,81 @@ _comments:
 
     </div>
 
-    <div class="fancy-title title-center title-dotted-border topmargin">
-      <h3>News</h3>
-    </div>
+    <div class="col_two_third">
+      <div class="fancy-title title-left title-dotted-border topmargin">
+        <h1><span class="editable">News</span></h1>
+      </div>
 
-    <div id="oc-posts" class="owl-carousel posts-carousel carousel-widget bottommargin" data-margin="20" data-nav="true" data-pagi="false" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="4">
+      <div id="oc-posts" class="owl-carousel posts-carousel carousel-widget bottommargin" data-margin="20" data-nav="true" data-pagi="false" data-items-xxs="1" data-items-xs="2" data-items-sm="2" data-items-md="3" data-items-lg="3">
 
-      {% for post in site.posts limit: 6 %}
-        <div class="oc-item">
-          <div class="ipost clearfix">
-            <div class="entry-image">
-              <a href="{{ post.header_img_path}}" data-lightbox="image"><img class="image_fade" src="{{ post.header_imgthumb_path }}" /></a>
-            </div>
-            <div class="entry-title">
-              <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            </div>
-            <ul class="entry-meta clearfix">
-              <li><i class="icon-calendar3"></i> {{ post.date | date_to_string }}</li>
-              <!-- <li><a href="blog&#45;single.html#comments"><i class="icon&#45;comments"></i> 13</a></li> -->
-              <li><a href="#"><i class="icon-camera-retro"></i></a></li>
-            </ul>
-            <div class="entry-content">
-              <p>{{ post.content | truncatewords: 40 }}</p>
-              <a href="{{ post.url }}" class="more-link">Read More</a>
+        {% for post in site.posts limit: 6 %}
+          <div class="oc-item">
+            <div class="ipost clearfix">
+              <div class="entry-image">
+                <a href="{{ post.header_img_path}}" data-lightbox="image"><img class="image_fade" src="{{ post.header_imgthumb_path }}" /></a>
+              </div>
+              <div class="entry-title">
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+              </div>
+              <ul class="entry-meta clearfix">
+                <li><i class="icon-calendar3"></i> {{ post.date | date_to_string }}</li>
+                <!-- <li><a href="blog&#45;single.html#comments"><i class="icon&#45;comments"></i> 13</a></li> -->
+                <li><a href="#"><i class="icon-camera-retro"></i></a></li>
+              </ul>
+              <div class="entry-content">
+                <p>{{ post.content | truncatewords: 40 }}</p>
+                <a href="{{ post.url }}" class="more-link">Read More</a>
+              </div>
             </div>
           </div>
-        </div>
 
-      {% endfor %}
+        {% endfor %}
 
+      </div>
     </div>
 
-    <div class="clear"></div>
+    <div class="col_one_third col_last">
+
+      <div class="fancy-title title-left title-dotted-border topmargin">
+        <h1><span class="editable">Testimonials</span></h1>
+      </div>
+
+      <div class="fslider testimonial nopadding noborder noshadow" data-animation="slide" data-arrows="false">
+        <div class="flexslider">
+          <div class="slider-wrap">
+            {% for t in site.data.testimonials%}
+              <div class="slide">
+                <div class="testi-image">
+                  <a href="#"><img src="{{ t.img_path }}" alt="Testimonials"></a>
+                </div>
+                <div class="testi-content">
+                  <p>{{ t.description }}</p>
+                  <div class="testi-meta">
+                    {{ t.name }}
+                    <span>{{ t.company }}</span>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+    </div>
   </div>
 
   <div class="section nomargin noborder bgcolor dark footer-stick" style="padding: 25px 0;">
     <div class="container center clearfix">
 
       <div class="heading-block" style="margin-bottom: 15px">
-        <h2 class="editable">"Don't ever be afraid or discouraged! I am the Lord your God, and I will be there to help you wherever you go"</h2>
-        <span class="editable">Joshua 1:9</span>
+        <h2 class="editable">More message here</h2>
+        <span class="editable">Details here</span>
       </div>
 
-      <a href="https://visitor.r20.constantcontact.com/manage/optin?v=001Jt_6JQUUtuJLbURoKQeX3xo9fUosfztvwpbifbq5WyGQP6V8dwWaNA08oNtrIOeQhK132av4uSJ9WsJkgQFwOTstA78htWjydpue2xzX4fA%3D" target="_target" class="button button-rounded button-reveal button-large button-border tright btn-special">
-        <i class="icon-email2"></i><span>Subscribe to our Newsletter</span>
-      </a>
+      <!-- <a href="https://visitor.r20.constantcontact.com/manage/optin?v=001Jt_6JQUUtuJLbURoKQeX3xo9fUosfztvwpbifbq5WyGQP6V8dwWaNA08oNtrIOeQhK132av4uSJ9WsJkgQFwOTstA78htWjydpue2xzX4fA%3D" target="_target" class="button button&#45;rounded button&#45;reveal button&#45;large button&#45;border tright btn&#45;special"> -->
+      <!--   <i class="icon&#45;email2"></i><span>Subscribe to our Newsletter</span> -->
+      <!-- </a> -->
 
     </div>
   </div>

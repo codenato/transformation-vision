@@ -4,6 +4,10 @@ brief: Prayer changes things
 header_imgthumb_path: /uploads/dsc-6566.jpg
 header_img_path: /uploads/dsc-6566.jpg
 gallery:
+  - g_img_path: /uploads/dsc-6585.jpg
+    g_img_thumb_path: /uploads/dsc-6585.jpg
+  - g_img_path: /uploads/dsc-6582.jpg
+    g_img_thumb_path:
   - g_img_path:
     g_img_thumb_path:
 ---
@@ -13,7 +17,7 @@ Thank you to ALL who help make this event a success. We believe prayer touches t
 
 **Join us at the Cedar Hill City-Wide Event**
 
-Transformation Vision prioritizes community involvement in the annual National Day of Prayer (which is the first Thursday in May).&nbsp; Transformation Vision offers prayer that is open to the community both during the Noon hour and again for an evening community service.&nbsp; The location for the Noon prayer varies from year to year and the evening service traditionally is held at Cedar Hill High School’s Performing Arts Center.&nbsp; As time approaches the event each year, this website will provide further details.&nbsp;
+Transformation Vision prioritizes community involvement in the annual National Day of Prayer (which is the first Thursday in May).  Transformation Vision offers prayer that is open to the community both during the Noon hour and again for an evening community service.  The location for the Noon prayer varies from year to year and the evening service traditionally is held at Cedar Hill High School’s Performing Arts Center.  As time approaches the event each year, this website will provide further details.
 
 **A Prayer for America by Beth Moore**
 

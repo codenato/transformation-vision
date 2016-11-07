@@ -1,7 +1,7 @@
 ---
 title: National Day of Prayer
 brief: Prayer changes things
-header_imgthumb_path: 'https://i.ytimg.com/vi/PHG5SoXOQoA/maxresdefault.jpg'
+header_imgthumb_path: /uploads/dsc-6566.jpg
 header_img_path: 'https://i.ytimg.com/vi/PHG5SoXOQoA/maxresdefault.jpg'
 gallery:
   - g_img_path: /uploads/dsc-6585.jpg

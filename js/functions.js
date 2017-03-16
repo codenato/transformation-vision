@@ -1,5 +1,10 @@
 var $ = jQuery.noConflict();
 
+var readMore = function(n) {
+  console.log(n);
+  $('.para' + n).toggleClass('hidden');
+};
+
 $.fn.inlineStyle = function (prop) {
 	return this.prop("style")[$.camelCase(prop)];
 };

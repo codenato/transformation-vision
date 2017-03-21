@@ -15,7 +15,7 @@ sponsors:
 
 
 **Dates:** First Thursday of February, April, June, August, October, and December.
-<br>Time: 7:30am
+<br>
 <br>
 <br>Location: Alan Sims Recreation Center
 

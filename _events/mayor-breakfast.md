@@ -16,17 +16,13 @@ sponsors:
 
 **Dates:** First Thursday of February, April, June, August, October, and December.
 <br>
-<br>
-<br>Location: Alan Sims Recreation Center
+<br>**Location:** Alan Sims Recreation Center
+<br>310 E. Parkerville Road, Cedar Hill, TX 75104
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 310 E. Parkerville Road, Cedar Hill, TX 75104
+**Leader:&nbsp;**Amber Hatley
+<br>**e-mail:&nbsp;**alhatley@yahoo.com
 
-Leader
+**Team Members**
+<br>Carolyn McKee
 
-&nbsp; &nbsp; Amber Hatley, alhatley@yahoo.com
-
-Team Members
-
-&nbsp;&nbsp; Carolyn McKee
-
-Mayor’s Prayer Breakfast
+&nbsp;

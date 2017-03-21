@@ -1,6 +1,6 @@
 ---
 title: "Mayor's Prayer Breakfast"
-start_at_date: 2017-05-04 00:00:00
+start_at_date: 2017-04-06 00:00:00
 start_time:
 end_time:
 location: Alan Sims Recreation Center
@@ -19,10 +19,8 @@ sponsors:
 <br>**Location:** Alan Sims Recreation Center
 <br>310 E. Parkerville Road, Cedar Hill, TX 75104
 
-**Leader:&nbsp;**Amber Hatley
-<br>**e-mail:&nbsp;**alhatley@yahoo.com
+**Leader:**Amber Hatley
+<br>**e-mail:**alhatley@yahoo.com
 
 **Team Members**
 <br>Carolyn McKee
-
-&nbsp;

@@ -1,5 +1,5 @@
 ---
-title: Mayor Breakfast
+title: "Mayor's Prayer Breakfast"
 start_at_date: 2017-04-06 00:00:00
 start_time:
 end_time:
@@ -28,3 +28,5 @@ Leader
 Team Members
 
 &nbsp;&nbsp; Carolyn McKee
+
+Mayor’s Prayer Breakfast

@@ -3,7 +3,7 @@ title: Mayor Breakfast
 start_at_date: 2017-04-06 00:00:00
 start_time:
 end_time:
-location: Trinity Church
+location: Alan Sims Recreation Center
 price:
 price_link:
 header_imgthumb_path: /uploads/Mayor_break_thumb.jpg
@@ -16,3 +16,15 @@ sponsors:
 
 **Dates:** First Thursday of February, April, June, August, October, and December.
 <br>Time: 7:30am
+<br>
+<br>Location: Alan Sims Recreation Center
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 310 E. Parkerville Road, Cedar Hill, TX 75104
+
+Leader
+
+&nbsp; &nbsp; Amber Hatley, alhatley@yahoo.com
+
+Team Members
+
+&nbsp;&nbsp; Carolyn McKee

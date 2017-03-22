@@ -9,6 +9,15 @@ slides:
   - img_path: ../images/about/5.jpg
   - img_path: ../images/about/6.jpg
   - img_path: ../images/about/7.jpg
+pray_gallery:
+  - g_img_path:
+    g_img_thumb_path:
+serve_gallery:
+  - g_img_path:
+    g_img_thumb_path:
+serve_gallery:
+  - g_img_path:
+    g_img_thumb_path:
 _comments:
   header_img_path: 1440 x 420
   img_path: 820 x 500
@@ -69,6 +78,16 @@ _comments:
           <p class="editable">We pray because our vision for the city exceeds our abilities.  We pray because through prayer He gives strategies to accomplish the tasks before us. We pray to invoke His hand of blessing and protection over the people of this city.</p>
         </div>
 
+        <div class="col_full clearfix">
+
+          <div class="masonry-thumbs col-4" data-big="4" data-lightbox="gallery">
+            {% for g in page.pray_gallery %}
+              <a href="{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1"></a>
+            {% endfor %}
+          </div>
+
+        </div>
+
       </div>
 
       <div class="clear"></div><div class="line"></div>
@@ -90,6 +109,16 @@ _comments:
           <img class="editable" src="../images/portfolio/1/1.jpg" alt="Image" style="height: 100%;" />
         </div>
 
+        <div class="col_full clearfix">
+
+          <div class="masonry-thumbs col-4" data-big="4" data-lightbox="gallery">
+            {% for g in page.serve_gallery %}
+              <a href="{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1"></a>
+            {% endfor %}
+          </div>
+
+        </div>
+
       </div>
 
       <div class="col_full">
@@ -106,6 +135,16 @@ _comments:
 
           <p class="editable">We have a mission to establish hope throughout our city and beyond. Establishing this hope starts when we begin to love our city the way Jesus does. That means caring about people who live here - their suffering and pain, heartaches and trials, the oppression they experience, and the injustice they bear. If we are to fulfill the greatest commandment God gave to mankind - <strong> to love the Lord your God with all of your heart, soul and mind, and to love your neighbor as yourself</strong> - then it all starts with how we love.</p>
           <p class="editable">Loving the city is about bringing the influence of the kingdom of God into it. We are called to live as members of God’s Kingdom in the midst of the city, driven by our love for God and the love we have experienced from Him, and compelled by our love for others.</p>
+        </div>
+
+        <div class="col_full clearfix">
+
+          <div class="masonry-thumbs col-4" data-big="4" data-lightbox="gallery">
+            {% for g in page.love_gallery %}
+              <a href="{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1"></a>
+            {% endfor %}
+          </div>
+
         </div>
 
       </div>

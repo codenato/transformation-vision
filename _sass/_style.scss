@@ -3305,7 +3305,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 
 #page-title.page-title-dark span { color: rgba(255,255,255,0.7); }
 
-#page-title.page-title-dark .breadcrumb > .active { color: rgba(255,255,255,0.6); }
+#page-title.page-title-dark .breadcrumb > .active { color: rgba(#444,0.6); }
 
 #page-title.page-title-dark .breadcrumb a { color: rgba(255,255,255,0.8); }
 
@@ -9249,7 +9249,7 @@ body:not(.device-touch) .clients-grid li a {
 .testi-content p {
 	margin-bottom: 0;
 	font-style: italic;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .testi-content p:before,

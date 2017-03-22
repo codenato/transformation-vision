@@ -182,13 +182,14 @@ _comments:
 
     <div id="oc-events" class="owl-carousel events-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="false" data-items-sm="1" data-items-md="3" data-items-lg="3">
 
-      {% capture now_unix %} {{ 'now' | date: '%s' }} {% endcapture %}
+      <!-- {% capture now_unix %} {{ 'now' | date: '%s' }} {% endcapture %} -->
+      {% assign events_sorted = site.events | sort: "start_at_date" %}
 
-      {% for event in site.events reversed %}
+      {% for event in events_sorted %}
 
-        {% capture event_date_unix %} {{ event.start_at_date | date: '%s' }} {% endcapture %}
+        <!-- {% capture event_date_unix %} {{ event.start_at_date | date: '%s' }} {% endcapture %} -->
 
-        {% if event_date_unix >= now_unix  %}
+        <!-- {% if event_date_unix >= now_unix  %} -->
           <div class="oc-item">
             <div class="ievent clearfix">
               <div class="entry-image">
@@ -216,7 +217,7 @@ _comments:
             </div>
           </div>
 
-        {% endif %}
+        <!-- {% endif %} -->
 
       {% endfor %}
 

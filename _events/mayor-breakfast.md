@@ -1,8 +1,8 @@
 ---
 title: "Mayor's Prayer Breakfast"
 start_at_date: 2017-04-06 00:00:00
-start_time:
-end_time:
+start_time: '9:00 am'
+end_time: '10:00 am'
 location: Alan Sims Recreation Center
 price:
 price_link:

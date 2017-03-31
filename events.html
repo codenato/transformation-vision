@@ -16,8 +16,9 @@ _comments:
 
       <div id="posts" class="events small-thumbs">
         {% capture now_unix %} {{ 'now' | date: '%s' }} {% endcapture %}
+        {% assign events_sorted = site.events | sort: "start_at_date" %}
 
-        {% for event in site.events reversed %}
+        {% for event in events_sorted %}
 
           {% capture event_date_unix %} {{ event.start_at_date | date: '%s' }} {% endcapture %}
 

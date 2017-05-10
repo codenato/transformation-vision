@@ -223,4 +223,24 @@ _comments:
               {% endif %}
 
               {% if d.twitter != '' and d.twitter != nil%}
-                <a href="http://twitter.com/{{ d.twitter }}" class="social-icon inline-block si-small si-light si-rounde
+                 <a href="http://twitter.com/{{ d.twitter }}" class="social-icon inline-block si-small si-light si-rounded si-twitter"> 
+                  <i class="icon-twitter"></i> 
+                  <i class="icon-twitter"></i> 
+                </a> 
+              {% endif %} 
+ 
+              {% if d.google != '' and d.google != nil%} 
+                <a href="https://plus.google.com/u/0/+{{ d.google }}" class="social-icon inline-block si-small si-light si-rounded si-gplus"> 
+                  <i class="icon-gplus"></i> 
+                  <i class="icon-gplus"></i> 
+                </a> 
+              {% endif %} 
+            </div> 
+          </div> 
+        </div> 
+      {% endfor %} 
+    </div> 
+ 
+  </div> 
+ 
+</section>

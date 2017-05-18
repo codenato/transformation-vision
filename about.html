@@ -243,7 +243,7 @@ _comments:
             <div class="team-desc">
               <div class="team-title"><h4>{{ d.name }}</h4><span>{{ d.role }}</span></div>
               <div class="team-content">
-                <p class="para{{ forloop.index }}">{{ d.description  | truncatewords: 40 }}</p>
+                <p class="para{{ forloop.index }} para-break">{{ d.description  | truncatewords: 40 }}</p>
                 <p class="para{{ forloop.index }} hidden">{{ d.description  }}</p>
                 <a class="para{{ forloop.index }}" href="javascript:void(0)" onclick="readMore({{ forloop.index }})">read more</a>
                 <a class="para{{ forloop.index }} hidden" href="javascript:void(0)" onclick="readMore({{ forloop.index }})">read less</a>

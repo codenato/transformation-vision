@@ -7450,6 +7450,7 @@ body:not(.device-touch) .button.button-full strong {
 	margin-top: 5px;
 	color: #444;
 	font-weight: 300;
+  font-size: 12px;
 	text-transform: none;
 }
 
@@ -9443,6 +9444,10 @@ body:not(.device-touch) .clients-grid li a {
 	font-style: italic;
 	font-size: 15px;
 	margin-top: 5px;
+}
+
+.para-break {
+  min-height: 230px;
 }
 
 .team-content {

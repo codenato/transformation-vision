@@ -1,7 +1,7 @@
 ---
 title: "Mayor's Prayer Breakfast"
-start_at_date: 2017-04-06 00:00:00
-start_time: '9:00 am'
+start_at_date: 2017-06-01 00:00:00
+start_time: '7:00 am'
 end_time: '10:00 am'
 location: Alan Sims Recreation Center
 price:
@@ -18,6 +18,15 @@ sponsors:
 <br>
 <br>**Location:** Alan Sims Recreation Center
 <br>310 E. Parkerville Road, Cedar Hill, TX 75104
+<br>
+<br>**THEME**:&nbsp; Mission Cedar Hill│Community Investment
+
+THEME VERSE:&nbsp; “All the believers were united in heart and mind. And they felt that what they owed was not their own, so they shared everything they had.” ~Acts 4:32
+
+H. Jackson Brown, Jr. once said, “Opportunity dances with those already on the dance floor.” This prayer breakfast offers the great opportunity to cover Mission Cedar Hill in prayer the day before it launches the community outreach. So grateful you are someone already on the dance floor with me who will pray and believe for the best Mission Cedar Hill effort Cedar Hill has experienced yet!
+<br>&nbsp;
+
+Rob
 
 **Leader:**Amber Hatley
 <br>**e-mail:**alhatley@yahoo.com

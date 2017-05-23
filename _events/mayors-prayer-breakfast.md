@@ -20,7 +20,7 @@ sponsors:
 
 Dates: First Thursday of February, April, June, August, October, and December.&nbsp;
 <br>
-<br>Location: Alan Sims Recreation Center&nbsp;
+<br>Location: Alan Sims Recreation Center.&nbsp;
 <br>310 E. Parkerville Road, Cedar Hill, TX 75104&nbsp;
 <br>
 <br>THEME:&nbsp; Mission Cedar Hill│Community Investment

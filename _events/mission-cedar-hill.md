@@ -1,6 +1,6 @@
 ---
 title: Mission Cedar Hill
-start_at_date: 2017-06-11 00:00:00
+start_at_date: 2017-06-09 00:00:00
 start_time: '8:00 am'
 end_time: '5:00 pm'
 location: High Pointe Baptist Church
@@ -22,7 +22,7 @@ ACT NOW!
 
 **Thursday –Saturday June 8-10 8:00 AM – 5:00 PM** all staged from campus of High Pointe 101 High Pointe Lane, Cedar Hill
 
-City of Cedar Hill/Transformation Vision Kick –off&nbsp; will be 8:00 AM Thursday June 8 at the High Pointe Campus
+City of Cedar Hill/Transformation Vision Kick –off  will be 8:00 AM Thursday June 8 at the High Pointe Campus
 
 **Mission Cedar Hill’s Community Celebration 🙌🏼**
 <br>Praise in the Park & Picnic
@@ -30,7 +30,7 @@ City of Cedar Hill/Transformation Vision Kick –off&nbsp; will be 8:00 AM Thurs
 <br>
 <br>Virginia Weaver Park
 <br>631 Somerset Drive
-<br>Cedar Hill, TX&nbsp; 75104
+<br>Cedar Hill, TX  75104
 
 🌭🍔 Mission Cedar Hill will provide hot dogs, hamburger and drinks.
 
@@ -38,4 +38,4 @@ City of Cedar Hill/Transformation Vision Kick –off&nbsp; will be 8:00 AM Thurs
 
 For more information on Mission Cedar Hill and how to connect, contact:
 
-Steve Scott, Project Manager&nbsp; 972-810-1570.&nbsp;
+Steve Scott, Project Manager  972-810-1570.

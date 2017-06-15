@@ -7,7 +7,7 @@ location: Hillside Village
 price:
 price_link:
 header_img_path: /uploads/about_us_slide.jpg
-event_imgthumb_path:
+event_imgthumb_path: /uploads/jamtogive-thumb.png
 event_img_path: /uploads/jamtogive-site.jpg
 gallery:
   - g_img_path:

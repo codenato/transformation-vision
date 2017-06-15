@@ -6,7 +6,7 @@ end_time: '9:00 pm'
 location: Hillside Village
 price:
 price_link:
-header_img_path: /uploads/banner-jam-to-give.png
+header_img_path: /uploads/about_us_slide.jpg
 event_imgthumb_path: /uploads/jamtogive-site.jpg
 event_img_path: /uploads/jamtogive-site.jpg
 gallery:

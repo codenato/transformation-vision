@@ -18,3 +18,5 @@ sponsors:
 ---
 
 
+Diva G. & High Maintenance - Dance / Jazz
+<br>Dogwood Canyon Audubon

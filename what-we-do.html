@@ -128,12 +128,32 @@ _comments:
 
         <div class="col_full clearfix">
 
+          <!-- old gallery
           <div class="masonry-thumbs col-4" data-big="4" data-lightbox="gallery">
             {% for g in page.pray_gallery %}
               <a href="{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1" /></a>
             {% endfor %}
           </div>
+          -->
 
+          <div id="related-portfolio" class="owl-carousel owl-carousel-full portfolio-carousel portfolio-notitle portfolio-nomargin carousel-widget" data-autoplay="2000" data-loop="true" data-margin="0" data-nav="true" data-pagi="false" data-items="1" data-items-xxs="1" data-items-xs="1" data-items-sm="1" data-items-md="1">
+
+            {% for g in page.pray_gallery %}
+              <div class="oc-item">
+                <div class="iportfolio">
+                  <div class="portfolio-image">
+                    <a href="javascript:void(0)">
+                      <img src="{{ g.g_img_thumb_path }}" />
+                    </a>
+                    <div class="portfolio-overlay">
+                      <a href="{{ g.g_img_path }}" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+
+          </div>
         </div>
 
       </div>
@@ -159,10 +179,29 @@ _comments:
 
         <div class="col_full clearfix">
 
-          <div class="masonry-thumbs col-4" data-big="4" data-lightbox="gallery">
+          <!-- <div class="masonry&#45;thumbs col&#45;4" data&#45;big="4" data&#45;lightbox="gallery"> -->
+          <!--   {% for g in page.serve_gallery %} -->
+          <!--     <a href="{{ g.g_img_path }}" data&#45;lightbox="gallery&#45;item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1" /></a> -->
+          <!--   {% endfor %} -->
+          <!-- </div> -->
+
+          <div id="related-portfolio" class="owl-carousel owl-carousel-full portfolio-carousel portfolio-notitle portfolio-nomargin carousel-widget" data-autoplay="2000" data-loop="true" data-margin="0" data-nav="true" data-pagi="false" data-items="1" data-items-xxs="1" data-items-xs="1" data-items-sm="1" data-items-md="1">
+
             {% for g in page.serve_gallery %}
-              <a href="{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1" /></a>
+              <div class="oc-item">
+                <div class="iportfolio">
+                  <div class="portfolio-image">
+                    <a href="javascript:void(0)">
+                      <img src="{{ g.g_img_thumb_path }}" />
+                    </a>
+                    <div class="portfolio-overlay">
+                      <a href="{{ g.g_img_path }}" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             {% endfor %}
+
           </div>
 
         </div>
@@ -187,10 +226,29 @@ _comments:
 
         <div class="col_full clearfix">
 
-          <div class="masonry-thumbs col-4" data-big="4" data-lightbox="gallery">
+          <!-- <div class="masonry&#45;thumbs col&#45;4" data&#45;big="4" data&#45;lightbox="gallery"> -->
+          <!--   {% for g in page.love_gallery %} -->
+          <!--     <a href="{{ g.g_img_path }}" data&#45;lightbox="gallery&#45;item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1" /></a> -->
+          <!--   {% endfor %} -->
+          <!-- </div> -->
+
+          <div id="related-portfolio" class="owl-carousel owl-carousel-full portfolio-carousel portfolio-notitle portfolio-nomargin carousel-widget" data-autoplay="2000" data-loop="true" data-margin="0" data-nav="true" data-pagi="false" data-items="1" data-items-xxs="1" data-items-xs="1" data-items-sm="1" data-items-md="1">
+
             {% for g in page.love_gallery %}
-              <a href="{{ g.g_img_path }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ g.g_img_thumb_path }}" alt="Gallery Thumb 1" /></a>
+              <div class="oc-item">
+                <div class="iportfolio">
+                  <div class="portfolio-image">
+                    <a href="javascript:void(0)">
+                      <img src="{{ g.g_img_thumb_path }}" />
+                    </a>
+                    <div class="portfolio-overlay">
+                      <a href="{{ g.g_img_path }}" class="center-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             {% endfor %}
+
           </div>
 
         </div>

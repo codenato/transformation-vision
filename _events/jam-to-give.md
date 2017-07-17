@@ -18,5 +18,5 @@ sponsors:
 ---
 
 
-Diva G. & High Maintenance - Dance / Jazz
-<br>Dogwood Canyon Audubon
+The Free Loaders - Jazz / Blues.
+<br>Pawn Refletion Ranch.

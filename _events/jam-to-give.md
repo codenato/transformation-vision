@@ -1,6 +1,6 @@
 ---
 title: Jam to Give
-start_at_date: 2017-07-21 00:00:00
+start_at_date: 2017-07-28 00:00:00
 start_time: '7:00 pm'
 end_time: '9:00 pm'
 location: Hillside Village
@@ -18,5 +18,5 @@ sponsors:
 ---
 
 
-The Free Loaders - Jazz / Blues.
-<br>Pawn Refletion Ranch.
+Fingerprints - Classic Motown Smooth Jazz
+<br>Friends of Tri-City Animal Shelter

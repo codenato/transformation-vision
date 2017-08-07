@@ -1,6 +1,6 @@
 ---
 title: Mission Cedar Hill
-start_at_date: 2017-06-09 00:00:00
+start_at_date: 2017-08-26 00:00:00
 start_time: '8:00 am'
 end_time: '5:00 pm'
 location: High Pointe Baptist Church
@@ -17,5 +17,3 @@ sponsors:
 
 ACT NOW!
 <br>To serve on a team, provide materials, or financial assistance, call 972.293.0155
-
-&nbsp;

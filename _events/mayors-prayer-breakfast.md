@@ -1,6 +1,6 @@
 ---
-title: "Mayor's Prayer Breakfast"
-start_at_date: 2017-08-03 00:00:00
+title: Mayor's Prayer Breakfast
+start_at_date: 2017-10-05 00:00:00
 start_time: '7:30 am'
 end_time: '10:00 am'
 location: Alan Sims Recreation Center
@@ -21,10 +21,8 @@ sponsors:
 Location: Alan Sims Recreation Center.
 <br>310 E. Parkerville Road, Cedar Hill, TX 75104
 <br>
-<br>**THEME:**  Back to School Prayer Emphasis
+<br>**THEME:**&nbsp; TBD
 
-**THEME VERSE:**  “For wisdom is a defense as money is a defense, but the excellence of knowledge is that wisdom gives life to those who have it.” - Ecclesiastes 7:12
+**THEME VERSE:**&nbsp; TBD
 
-Let's get the upcoming school year off to a great start by covering our students and faculty in prayer!
-
-Rob
+&nbsp;

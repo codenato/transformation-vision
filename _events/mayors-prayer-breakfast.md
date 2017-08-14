@@ -19,7 +19,7 @@ sponsors:
 
 
 Location: Alan Sims Recreation Center.
-<br>310 E. Parkerville Road, Cedar Hill, TX 75104
+<br>310 E. Parkerville Road, Cedar Hill
 <br>
 <br>**THEME:**&nbsp; TBD
 

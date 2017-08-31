@@ -3,7 +3,7 @@ title: Tuesday Morning Prayer
 start_at_date: 2017-09-05 00:00:00
 start_time:
 end_time:
-location: TBD
+location: TBD.
 price:
 price_link:
 header_img_path: /uploads/about-us-slide.jpg

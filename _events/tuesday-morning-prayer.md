@@ -8,7 +8,7 @@ price:
 price_link:
 header_img_path: /uploads/about-us-slide.jpg
 event_imgthumb_path: /uploads/national-prayer-thumb.jpg
-event_img_path: /uploads/banner-tuesday-morning-prayer.png
+event_img_path: /uploads/banner-thuesday.jpg
 gallery:
   - g_img_path:
     g_img_thumb_path:

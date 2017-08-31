@@ -1,13 +1,13 @@
 ---
 title: Tuesday Morning Prayer
-start_at_date:
+start_at_date: 2017-09-05 00:00:00
 start_time:
 end_time:
-location:
+location: TBD
 price:
 price_link:
-header_img_path:
-event_imgthumb_path:
+header_img_path: /uploads/National_Prayer_thumb.jpg
+event_imgthumb_path: /uploads/banner-tuesday-morning-prayer.png
 event_img_path:
 gallery:
   - g_img_path:
@@ -16,3 +16,11 @@ sponsors:
   - name:
     img_path:
 ---
+
+
+Every Tuesday @8am at local business, church, outreach or school.
+
+Contact: Dr Edsel Dur&eacute;u for the next prayer location.
+<br>
+<br>[edureus@thanksgivingtabernacule.org](javascript:void(location.href='mailto:'+String.fromCharCode(101,100,117,114,101,117,115,64,116,104,97,110,107,115,103,105,118,105,110,103,116,97,98,101,114,110,97,99,117,108,101,46,111,114,103)))
+<br>Phone: 817-706-5161

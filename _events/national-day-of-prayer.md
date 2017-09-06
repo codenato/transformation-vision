@@ -8,7 +8,7 @@ price:
 price_link:
 header_img_path:
 event_imgthumb_path: /uploads/national-day-of-prayer-graphic-for-progarm-background.jpg
-event_img_path:
+event_img_path: /uploads/National Day of Prayer Graphic for Progarm background.jpg
 gallery:
   - g_img_path:
     g_img_thumb_path:

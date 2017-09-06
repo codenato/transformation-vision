@@ -7,7 +7,7 @@ location: 'Performing Arts Center, Cedar Hill High School'
 price:
 price_link:
 header_img_path:
-event_imgthumb_path:
+event_imgthumb_path: /uploads/national-day-of-prayer-graphic-for-progarm-background.jpg
 event_img_path:
 gallery:
   - g_img_path:
@@ -20,7 +20,7 @@ sponsors:
 
 Then next National Day of Prayer will be held May 3, 2018
 
-A noon event will be held at a local church. &nbsp;Location TBD
+A noon event will be held at a local church.  Location TBD
 
 At 7pm, the community comes together at the Performing Arts Center at Cedar Hill High School.
 

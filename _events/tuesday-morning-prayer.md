@@ -1,6 +1,6 @@
 ---
 title: Tuesday Morning Prayer
-start_at_date: 2017-10-03 00:00:00
+start_at_date: 2017-10-10 00:00:00
 start_time: '8:00 am'
 end_time:
 location: Contact for the location

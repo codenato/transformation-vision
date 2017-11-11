@@ -1,6 +1,6 @@
 ---
 title: Mayor's Prayer Breakfast
-start_at_date: 2017-10-05 00:00:00
+start_at_date: 2017-11-07 00:00:00
 start_time: '7:30 am'
 end_time: '10:00 am'
 location: Alan Sims Recreation Center
@@ -18,9 +18,6 @@ sponsors:
 ---
 
 
-Location: Alan Sims Recreation Center.
-<br>310 E. Parkerville Road, Cedar Hill, TX 75104
-<br>
-<br>**THEME:**&nbsp; TBD
+Location: Alan Sims Recreation Center.<br>310 E. Parkerville Road, Cedar Hill, TX 75104<br><br>**THEME:**  TBD
 
-**THEME VERSE:**&nbsp; TBD
+**THEME VERSE:**  TBD

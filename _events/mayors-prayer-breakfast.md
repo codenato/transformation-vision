@@ -18,6 +18,6 @@ sponsors:
 ---
 
 
-Location: Alan Sims Recreation Center.<br>310 E. Parkerville Road, Cedar Hill, TX 75104<br><br>**THEME:**  TBD
+Location: Alan Sims Recreation Center.<br>310 E. Parkerville Road, Cedar Hill, TX 75104<br><br>**THEME:**&nbsp; Celebrate Jesus!
 
-**THEME VERSE:**  TBD
+**THEME VERSE:**"But when the fullness of the time had come, God sent forth His Son, born of a women, born under the law, to redeem those who were under the law, that we might receive the adoption as sons." &nbsp;Galatians 4:4-5<br><br>Looking forward to celebrate our Savior's birth together.<br><br>Rob

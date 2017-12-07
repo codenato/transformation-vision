@@ -1,6 +1,6 @@
 ---
 title: Big Day
-start_at_date: 2018-06-07 00:00:00
+start_at_date: 2018-01-27 00:00:00
 start_time: '7:30 am'
 end_time: '4:30 pm'
 location: High Pointe Baptist Church
@@ -18,6 +18,3 @@ sponsors:
 ---
 
 
-&nbsp;
-
-&nbsp;

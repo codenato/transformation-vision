@@ -1,14 +1,14 @@
 ---
-title: Big Week
+title: Big Day
 start_at_date: 2018-06-07 00:00:00
-start_time:
-end_time:
-location:
+start_time: '7:30 am'
+end_time: '4:30 pm'
+location: High Pointe Baptist Church
 price:
 price_link:
 header_img_path: /uploads/about-us-slide.jpg
-event_imgthumb_path: /uploads/bigweek.jpg
-event_img_path: /uploads/bigweek-2.jpg
+event_imgthumb_path: /images/events/big_day_banner.jpg
+event_img_path: /images/events/big_day_banner.jpg
 gallery:
   - g_img_path:
     g_img_thumb_path:
@@ -17,8 +17,6 @@ sponsors:
     img_path:
 ---
 
-
-June 7-9, 2018.
 
 &nbsp;
 
